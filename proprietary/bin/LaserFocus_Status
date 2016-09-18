@@ -1,0 +1,4 @@
+#!/system/bin/sh
+
+cat /proc/driver/LaserFocus_Status
+			
