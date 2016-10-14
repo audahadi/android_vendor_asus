@@ -172,6 +172,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/etc/firmware/widevine.b02:system/etc/firmware/widevine.b02\
     vendor/asus/Z010D/proprietary/etc/firmware/widevine.b03:system/etc/firmware/widevine.b03\
     vendor/asus/Z010D/proprietary/etc/firmware/widevine.mdt:system/etc/firmware/widevine.mdt\
+    vendor/asus/Z010D/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml\
+    vendor/asus/Z010D/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml\
     vendor/asus/Z010D/proprietary/etc/gps.conf:system/etc/gps.conf\
     vendor/asus/Z010D/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept\
     vendor/asus/Z010D/proprietary/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny\
@@ -189,7 +191,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/etc/izat.conf:system/etc/izat.conf\
     vendor/asus/Z010D/proprietary/etc/lowi.conf:system/etc/lowi.conf\
     vendor/asus/Z010D/proprietary/etc/sap.conf:system/etc/sap.conf\
-    vendor/asus/Z010D/proprietary/etc/sensor_init.sh:system/etc/sensor_init.sh\
     vendor/asus/Z010D/proprietary/etc/tamcid:system/etc/tamcid\
     vendor/asus/Z010D/proprietary/etc/thermald-ultimate-mode.conf:system/etc/thermald-ultimate-mode.conf\
     vendor/asus/Z010D/proprietary/etc/thermal-engine-8916.conf:system/etc/thermal-engine-8916.conf\
@@ -199,21 +200,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf
 
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z010D/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar\
-    vendor/asus/Z010D/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar\
-    vendor/asus/Z010D/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar\
-    vendor/asus/Z010D/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar\
-    vendor/asus/Z010D/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar\
-    vendor/asus/Z010D/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar\
     vendor/asus/Z010D/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar\
     vendor/asus/Z010D/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar\
     vendor/asus/Z010D/proprietary/framework/org.apache.http.legacy.boot.jar:system/framework/org.apache.http.legacy.boot.jar \
     vendor/asus/Z010D/proprietary/framework/QPerformance.jar:system/framework/QPerformance.jar \
     vendor/asus/Z010D/proprietary/framework/org.cyanogenmod.hardware.jar:system/framework/org.cyanogenmod.hardware.jar \
-    vendor/asus/Z010D/proprietary/framework/org.cyanogenmod.platform.jar:system/framework/org.cyanogenmod.platform.jar \
-    vendor/asus/Z010D/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar\
-    vendor/asus/Z010D/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
-    vendor/asus/Z010D/proprietary/framework/tcmclient.jar:system/vendor/asus/Z010D/proprietary/framework/tcmclient.jar
+    vendor/asus/Z010D/proprietary/framework/org.cyanogenmod.platform.jar:system/framework/org.cyanogenmod.platform.jar
 
 PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.msm8916.so\
