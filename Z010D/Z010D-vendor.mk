@@ -21,8 +21,13 @@ LOCAL_PATH := $(call my-dir)
 DEVICE_PACKAGE_OVERLAYS += vendor/asus/Z010D/overlay
 
 PRODUCT_PACKAGES += \
+    QtiTelephonyService \
     shutdownlistener \
     TimeService \
-    qcrilmsgtunnel
+    CNEService \
+    com.qualcomm.location \
+    dpmserviceapp \
+    qcrilmsgtunnel \
+    QtiTetherService
 
 $(call inherit-product, vendor/asus/Z010D/Z010D-vendor-blobs.mk)

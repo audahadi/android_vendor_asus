@@ -172,8 +172,17 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/etc/firmware/widevine.b02:system/etc/firmware/widevine.b02\
     vendor/asus/Z010D/proprietary/etc/firmware/widevine.b03:system/etc/firmware/widevine.b03\
     vendor/asus/Z010D/proprietary/etc/firmware/widevine.mdt:system/etc/firmware/widevine.mdt\
-    vendor/asus/Z010D/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml\
-    vendor/asus/Z010D/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml\
+    vendor/asus/Z010D/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/qti_telephony_common.xml:system/etc/permissions/qti_telephony_common.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/telephonyservice.xml::system/etc/permissions/telephonyservice.xml \
     vendor/asus/Z010D/proprietary/etc/gps.conf:system/etc/gps.conf\
     vendor/asus/Z010D/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept\
     vendor/asus/Z010D/proprietary/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny\
@@ -205,7 +214,23 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/framework/org.apache.http.legacy.boot.jar:system/framework/org.apache.http.legacy.boot.jar \
     vendor/asus/Z010D/proprietary/framework/QPerformance.jar:system/framework/QPerformance.jar \
     vendor/asus/Z010D/proprietary/framework/org.cyanogenmod.hardware.jar:system/framework/org.cyanogenmod.hardware.jar \
-    vendor/asus/Z010D/proprietary/framework/org.cyanogenmod.platform.jar:system/framework/org.cyanogenmod.platform.jar
+    vendor/asus/Z010D/proprietary/framework/org.cyanogenmod.platform.jar:system/framework/org.cyanogenmod.platform.jar \
+    vendor/asus/Z010D/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar\
+    vendor/asus/Z010D/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar\
+    vendor/asus/Z010D/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar\
+    vendor/asus/Z010D/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar\
+    vendor/asus/Z010D/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar\
+    vendor/asus/Z010D/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar\
+    vendor/asus/Z010D/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar\
+    vendor/asus/Z010D/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar
+
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
+    vendor/asus/Z010D/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
+    vendor/asus/Z010D/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
+    vendor/asus/Z010D/proprietary/lib/DataSet/ditSCidGen/msgchk.db:system/lib/DataSet/ditSCidGen/msgchk.db \
+    vendor/asus/Z010D/proprietary/lib/DataSet/ispDB/ParameterDB.db:system/lib/DataSet/ispDB/ParameterDB.db \
+    vendor/asus/Z010D/proprietary/lib/style.cng:system/lib/style.cng
 
 PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.msm8916.so\
@@ -219,8 +244,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/lib64/hw/sensors.PS_ALS.msm8916.so:system/lib64/hw/sensors.PS_ALS.msm8916.so\
     vendor/asus/Z010D/proprietary/lib/libcmdthread.so:system/lib/libcmdthread.so\
     vendor/asus/Z010D/proprietary/lib64/libcmdthread.so:system/lib64/libcmdthread.so
-
-
 
 PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so\
@@ -258,6 +281,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so\
     vendor/asus/Z010D/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so\
     vendor/asus/Z010D/proprietary/lib/libmorpho_panorama_gp.so:system/lib/libmorpho_panorama_gp.so\
+    vendor/asus/Z010D/proprietary/lib/libsarcsoftface.so:system/lib/libsarcsoftface.so \
+    vendor/asus/Z010D/proprietary/lib/libsarcsoft_gallery.so:system/lib/libsarcsoft_gallery \
     vendor/asus/Z010D/proprietary/lib/libmpbase.so:system/lib/libmpbase.so\
     vendor/asus/Z010D/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so\
     vendor/asus/Z010D/proprietary/lib/libxditk_ArcSoftMOD.so:system/lib\
