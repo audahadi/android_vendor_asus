@@ -207,13 +207,27 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar\
     vendor/asus/Z010D/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar\
     vendor/asus/Z010D/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar\
-    vendor/asus/Z010D/proprietary/framework/org.apache.http.legacy.boot.jar:system/framework/org.apache.http.legacy.boot.jar \
-    vendor/asus/Z010D/proprietary/framework/QPerformance.jar:system/framework/QPerformance.jar \
-    vendor/asus/Z010D/proprietary/framework/org.cyanogenmod.hardware.jar:system/framework/org.cyanogenmod.hardware.jar \
-    vendor/asus/Z010D/proprietary/framework/org.cyanogenmod.platform.jar:system/framework/org.cyanogenmod.platform.jar \
     vendor/asus/Z010D/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar\
-    vendor/asus/Z010D/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
-    vendor/asus/Z010D/proprietary/framework/tcmclient.jar:system/vendor/asus/Z010D/proprietary/framework/tcmclient.jar
+    vendor/asus/Z010D/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar
+
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/qti_telephony_common.xml:system/etc/permissions/qti_telephony_common.xml
+
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
+    vendor/asus/Z010D/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
+    vendor/asus/Z010D/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
+    vendor/asus/Z010D/proprietary/lib/DataSet/ditSCidGen/msgchk.db:system/lib/DataSet/ditSCidGen/msgchk.db \
+    vendor/asus/Z010D/proprietary/lib/DataSet/ispDB/ParameterDB.db:system/lib/DataSet/ispDB/ParameterDB.db
 
 PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.msm8916.so\
@@ -227,8 +241,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/lib64/hw/sensors.PS_ALS.msm8916.so:system/lib64/hw/sensors.PS_ALS.msm8916.so\
     vendor/asus/Z010D/proprietary/lib/libcmdthread.so:system/lib/libcmdthread.so\
     vendor/asus/Z010D/proprietary/lib64/libcmdthread.so:system/lib64/libcmdthread.so
-
-
 
 PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so\
@@ -274,12 +286,10 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/lib/libxditk_SR.so:system/lib/libxditk_SR.so
 
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z010D/proprietary/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp\
+    vendor/asus/Z010D/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
+    vendor/asus/Z010D/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
+    vendor/asus/Z010D/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/asus/Z010D/proprietary/vendor/bin/chamomile_provision:system/vendor/bin/chamomile_provision\
-    vendor/asus/Z010D/proprietary/vendor/etc/calmodule.cfg:system/vendor/etc/calmodule.cfg\
-    vendor/asus/Z010D/proprietary/vendor/etc/fallback_fonts.xml:system/vendor/etc/fallback_fonts.xml\
-    vendor/asus/Z010D/proprietary/vendor/etc/style.cng:system/vendor/etc/style.cng\
-    vendor/asus/Z010D/proprietary/vendor/etc/workspace_grid_setting.xml:system/vendor/etc/workspace_grid_setting.xml\
     vendor/asus/Z010D/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so\
@@ -820,7 +830,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libtar.so:system/vendor/lib/libtar.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so\
-    vendor/asus/Z010D/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so\
@@ -1127,7 +1136,4 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/vendor/lib64/egl/libRBGLESv1_CM_adreno.so:system/vendor/lib64/egl/libRBGLESv1_CM_adreno.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/egl/libRBGLESv2_adreno.so:system/vendor/lib64/egl/libRBGLESv2_adreno.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so\
-    vendor/asus/Z010D/proprietary/vendor/lib64/mediadrm/libprmediadrmplugin.so:system/vendor/lib64/mediadrm/libprmediadrmplugin.so\
-    vendor/asus/Z010D/proprietary/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd\
-    vendor/asus/Z010D/proprietary/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd\
-    vendor/asus/Z010D/proprietary/vendor/speccfg/carrier_regional_pack_conf.xml:system/vendor/speccfg/carrier_regional_pack_conf.xml
+    vendor/asus/Z010D/proprietary/vendor/lib64/mediadrm/libprmediadrmplugin.so:system/vendor/lib64/mediadrm/libprmediadrmplugin.so

@@ -21,7 +21,10 @@ LOCAL_PATH := $(call my-dir)
 DEVICE_PACKAGE_OVERLAYS += vendor/asus/Z010D/overlay
 
 PRODUCT_PACKAGES += \
-    WfdService \
+    libloc_api_v02 \
+    libloc_ds_api \
+    libmm-abl \
+    libtime_genoff \
     QtiTelephonyService \
     shutdownlistener \
     TimeService \
