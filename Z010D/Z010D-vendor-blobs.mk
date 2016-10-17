@@ -1,85 +1,50 @@
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z010D/proprietary/bin/qmi-framework-tests/check_system_health:system/bin/qmi-framework-tests/check_system_health\
-    vendor/asus/Z010D/proprietary/bin/qmi-framework-tests/qmi_test_mt_client_init_instance:system/bin/qmi-framework-tests/qmi_test_mt_client_init_instance\
-    vendor/asus/Z010D/proprietary/bin/AsusCommandSpecial:system/bin/AsusCommandSpecial\
+    vendor/asus/Z010D/proprietary/bin/adsprpcd:system/bin/adsprpcd\
     vendor/asus/Z010D/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon\
     vendor/asus/Z010D/proprietary/bin/btnvtool:system/bin/btnvtool\
-    vendor/asus/Z010D/proprietary/bin/camera_flash:system/bin/camera_flash\
     vendor/asus/Z010D/proprietary/bin/camera_flash2:system/bin/camera_flash2\
+    vendor/asus/Z010D/proprietary/bin/camera_flash:system/bin/camera_flash\
     vendor/asus/Z010D/proprietary/bin/CameraModule:system/bin/CameraModule\
     vendor/asus/Z010D/proprietary/bin/CameraOTP:system/bin/CameraOTP\
     vendor/asus/Z010D/proprietary/bin/CameraResolution:system/bin/CameraResolution\
     vendor/asus/Z010D/proprietary/bin/CameraTest:system/bin/CameraTest\
     vendor/asus/Z010D/proprietary/bin/Camera_Unique_ID:system/bin/Camera_Unique_ID\
-    vendor/asus/Z010D/proprietary/bin/diag_callback_client:system/bin/diag_callback_client\
-    vendor/asus/Z010D/proprietary/bin/diag_dci_sample:system/bin/diag_dci_sample\
-    vendor/asus/Z010D/proprietary/bin/diag_klog:system/bin/diag_klog\
-    vendor/asus/Z010D/proprietary/bin/diag_mdlog:system/bin/diag_mdlog\
-    vendor/asus/Z010D/proprietary/bin/diag_qshrink4_daemon:system/bin/diag_qshrink4_daemon\
-    vendor/asus/Z010D/proprietary/bin/diag_socket_log:system/bin/diag_socket_log\
-    vendor/asus/Z010D/proprietary/bin/diag_uart_log:system/bin/diag_uart_log\
+    vendor/asus/Z010D/proprietary/bin/cnd:system/bin/cnd\
     vendor/asus/Z010D/proprietary/bin/dit_af_cali:system/bin/dit_af_cali\
     vendor/asus/Z010D/proprietary/bin/dit_cali:system/bin/dit_cali\
+    vendor/asus/Z010D/proprietary/bin/dpmd:system/bin/dpmd\
     vendor/asus/Z010D/proprietary/bin/ftmdaemon:system/bin/ftmdaemon\
-    vendor/asus/Z010D/proprietary/bin/fw_auto_update:system/bin/fw_auto_update\
-    vendor/asus/Z010D/proprietary/bin/fw_man_update:system/bin/fw_man_update\
-    vendor/asus/Z010D/proprietary/bin/GammaSetting:system/bin/GammaSetting\
     vendor/asus/Z010D/proprietary/bin/garden_app:system/bin/garden_app\
     vendor/asus/Z010D/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon\
     vendor/asus/Z010D/proprietary/bin/hal_proxy_daemon:system/bin/hal_proxy_daemon\
     vendor/asus/Z010D/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init\
-    vendor/asus/Z010D/proprietary/bin/hostapd:system/bin/hostapd\
-    vendor/asus/Z010D/proprietary/bin/hostapd_cli:system/bin/hostapd_cli\
+    vendor/asus/Z010D/proprietary/bin/irsc_util:system/bin/irsc_util\
     vendor/asus/Z010D/proprietary/bin/IR_sensor_module_number:system/bin/IR_sensor_module_number\
-    vendor/asus/Z010D/proprietary/bin/is_keybox_valid:system/bin/is_keybox_valid\
-    vendor/asus/Z010D/proprietary/bin/iwlist:system/bin/iwlist\
     vendor/asus/Z010D/proprietary/bin/LaserFocus_CalStart:system/bin/LaserFocus_CalStart\
     vendor/asus/Z010D/proprietary/bin/LaserFocus_enforce:system/bin/LaserFocus_enforce\
     vendor/asus/Z010D/proprietary/bin/LaserFocus_on:system/bin/LaserFocus_on\
     vendor/asus/Z010D/proprietary/bin/LaserFocus_Status:system/bin/LaserFocus_Status\
     vendor/asus/Z010D/proprietary/bin/LaserOn:system/bin/LaserOn\
-    vendor/asus/Z010D/proprietary/bin/LedTest:system/bin/LedTest\
     vendor/asus/Z010D/proprietary/bin/lightsensor_calibration_start:system/bin/lightsensor_calibration_start\
     vendor/asus/Z010D/proprietary/bin/loc_launcher:system/bin/loc_launcher\
     vendor/asus/Z010D/proprietary/bin/mm-audio-ftm:system/bin/mm-audio-ftm\
-    vendor/asus/Z010D/proprietary/bin/mm-qcamera-app:system/bin/mm-qcamera-app\
     vendor/asus/Z010D/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon\
-    vendor/asus/Z010D/proprietary/bin/mm-qjpeg-dec-test:system/bin/mm-qjpeg-dec-test\
-    vendor/asus/Z010D/proprietary/bin/mm-qjpeg-enc-test:system/bin/mm-qjpeg-enc-test\
-    vendor/asus/Z010D/proprietary/bin/mm-qomx-idec-test:system/bin/mm-qomx-idec-test\
-    vendor/asus/Z010D/proprietary/bin/mm-qomx-ienc-test:system/bin/mm-qomx-ienc-test\
-    vendor/asus/Z010D/proprietary/bin/mm-vidc-omx-test:system/bin/mm-vidc-omx-test\
     vendor/asus/Z010D/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance\
-    vendor/asus/Z010D/proprietary/bin/msm-vidc-test:system/bin/msm-vidc-test\
     vendor/asus/Z010D/proprietary/bin/netmgrd:system/bin/netmgrd\
     vendor/asus/Z010D/proprietary/bin/nl_listener:system/bin/nl_listener\
-    vendor/asus/Z010D/proprietary/bin/oemwvtest:system/bin/oemwvtest\
-    vendor/asus/Z010D/proprietary/bin/onFgAppChanged:system/bin/onFgAppChanged\
-    vendor/asus/Z010D/proprietary/bin/ProximityCalibration:system/bin/ProximityCalibration\
     vendor/asus/Z010D/proprietary/bin/proximity_calibration_start:system/bin/proximity_calibration_start\
+    vendor/asus/Z010D/proprietary/bin/ProximityCalibration:system/bin/ProximityCalibration\
     vendor/asus/Z010D/proprietary/bin/proximity_poll_get_proxm:system/bin/proximity_poll_get_proxm\
     vendor/asus/Z010D/proprietary/bin/qcom-system-daemon:system/bin/qcom-system-daemon\
-    vendor/asus/Z010D/proprietary/bin/qmi_simple_ril_test:system/bin/qmi_simple_ril_test\
     vendor/asus/Z010D/proprietary/bin/qmuxd:system/bin/qmuxd\
     vendor/asus/Z010D/proprietary/bin/qseecomd:system/bin/qseecomd\
-    vendor/asus/Z010D/proprietary/bin/qseecom_sample_client:system/bin/qseecom_sample_client\
     vendor/asus/Z010D/proprietary/bin/radish:system/bin/radish\
     vendor/asus/Z010D/proprietary/bin/RestoreCalibrationData:system/bin/RestoreCalibrationData\
     vendor/asus/Z010D/proprietary/bin/rfs_access:system/bin/rfs_access\
     vendor/asus/Z010D/proprietary/bin/rmt_storage:system/bin/rmt_storage\
-    vendor/asus/Z010D/proprietary/bin/tbaseLoader:system/bin/tbaseLoader\
-    vendor/asus/Z010D/proprietary/bin/test_ispCali_Android_L:system/bin/test_ispCali_Android_L\
-    vendor/asus/Z010D/proprietary/bin/tftp_server:system/bin/tftp_server\
     vendor/asus/Z010D/proprietary/bin/time_daemon:system/bin/time_daemon\
-    vendor/asus/Z010D/proprietary/bin/touch_fw_update:system/bin/touch_fw_update\
-    vendor/asus/Z010D/proprietary/bin/touch_node_authority.sh:system/bin/touch_node_authority.sh\
-    vendor/asus/Z010D/proprietary/bin/touch_self_test:system/bin/touch_self_test\
+    vendor/asus/Z010D/proprietary/bin/vm_bms:system/bin/vm_bms\
     vendor/asus/Z010D/proprietary/bin/wdsdaemon:system/bin/wdsdaemon\
-    vendor/asus/Z010D/proprietary/bin/wfdservice:system/bin/wfdservice\
-    vendor/asus/Z010D/proprietary/bin/widevine.sh:system/bin/widevine.sh\
-    vendor/asus/Z010D/proprietary/bin/xtwifi-client:system/bin/xtwifi-client\
-    vendor/asus/Z010D/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent\
-    vendor/asus/Z010D/proprietary/bin/yepdiag:system/bin/yepdiag\
     vendor/asus/Z010D/proprietary/bin/ZC550KL_afCali:system/bin/ZC550KL_afCali\
     vendor/asus/Z010D/proprietary/bin/ZC550KL_OV5670_DUT_CONFIG:system/bin/ZC550KL_OV5670_DUT_CONFIG\
     vendor/asus/Z010D/proprietary/bin/ZC550KL_T4K37_DUT_CONFIG:system/bin/ZC550KL_T4K37_DUT_CONFIG
@@ -115,11 +80,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/etc/firmware/phone_ct/LUT_W08.txt:system/etc/firmware/phone_ct/LUT_W08.txt\
     vendor/asus/Z010D/proprietary/etc/firmware/phone_ct/LUT_W09.txt:system/etc/firmware/phone_ct/LUT_W09.txt\
     vendor/asus/Z010D/proprietary/etc/firmware/phone_ct/LUT_W10.txt:system/etc/firmware/phone_ct/LUT_W10.txt\
-    vendor/asus/Z010D/proprietary/etc/firmware/Splendid/LUT/LUT_Rd03.txt:system/etc/firmware/Splendid/LUT/LUT_Rd03.txt\
-    vendor/asus/Z010D/proprietary/etc/firmware/Splendid/asussplendid_config.xml:system/etc/firmware/Splendid/asussplendid_config.xml\
-    vendor/asus/Z010D/proprietary/etc/firmware/wlan/prima/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat\
-    vendor/asus/Z010D/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini\
-    vendor/asus/Z010D/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin\
     vendor/asus/Z010D/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw\
     vendor/asus/Z010D/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw\
     vendor/asus/Z010D/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw\
@@ -146,7 +106,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/etc/firmware/keymaster.mdt:system/etc/firmware/keymaster.mdt\
     vendor/asus/Z010D/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw\
     vendor/asus/Z010D/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw\
-    vendor/asus/Z010D/proprietary/etc/firmware/nfc_test.bin:system/etc/firmware/nfc_test.bin\
     vendor/asus/Z010D/proprietary/etc/firmware/Phone_vivid.txt:system/etc/firmware/Phone_vivid.txt\
     vendor/asus/Z010D/proprietary/etc/firmware/Signedrompatch_v20.bin:system/etc/firmware/Signedrompatch_v20.bin\
     vendor/asus/Z010D/proprietary/etc/firmware/Signedrompatch_v21.bin:system/etc/firmware/Signedrompatch_v21.bin\
@@ -173,30 +132,15 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/etc/firmware/widevine.b03:system/etc/firmware/widevine.b03\
     vendor/asus/Z010D/proprietary/etc/firmware/widevine.mdt:system/etc/firmware/widevine.mdt\
     vendor/asus/Z010D/proprietary/etc/gps.conf:system/etc/gps.conf\
-    vendor/asus/Z010D/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept\
-    vendor/asus/Z010D/proprietary/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny\
-    vendor/asus/Z010D/proprietary/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf\
-    vendor/asus/Z010D/proprietary/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf\
-    vendor/asus/Z010D/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf\
-    vendor/asus/Z010D/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf\
     vendor/asus/Z010D/proprietary/etc/icesoundconfig.def:system/etc/icesoundconfig.def\
     vendor/asus/Z010D/proprietary/etc/icesoundpresets.def:system/etc/icesoundpresets.def\
-    vendor/asus/Z010D/proprietary/etc/init.asus.cover.sh:system/etc/init.asus.cover.sh\
-    vendor/asus/Z010D/proprietary/etc/init.asus.gesture.sh:system/etc/init.asus.gesture.sh\
-    vendor/asus/Z010D/proprietary/etc/init.asus.glove.sh:system/etc/init.asus.glove.sh\
-    vendor/asus/Z010D/proprietary/etc/init.asus.keycamera.sh:system/etc/init.asus.keycamera.sh\
-    vendor/asus/Z010D/proprietary/etc/ins_module.sh:system/etc/ins_module.sh\
     vendor/asus/Z010D/proprietary/etc/izat.conf:system/etc/izat.conf\
     vendor/asus/Z010D/proprietary/etc/lowi.conf:system/etc/lowi.conf\
     vendor/asus/Z010D/proprietary/etc/sap.conf:system/etc/sap.conf\
     vendor/asus/Z010D/proprietary/etc/sensor_init.sh:system/etc/sensor_init.sh\
-    vendor/asus/Z010D/proprietary/etc/tamcid:system/etc/tamcid\
-    vendor/asus/Z010D/proprietary/etc/thermald-ultimate-mode.conf:system/etc/thermald-ultimate-mode.conf\
-    vendor/asus/Z010D/proprietary/etc/thermal-engine-8916.conf:system/etc/thermal-engine-8916.conf\
-    vendor/asus/Z010D/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml\
-    vendor/asus/Z010D/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml\
-    vendor/asus/Z010D/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem\
-    vendor/asus/Z010D/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf
+    vendor/asus/Z010D/proprietary/etc/tamcid:system/etc/tamcid \
+    vendor/asus/Z010D/proprietary/etc/sec_config:system/etc/sec_config \
+    vendor/asus/Z010D/proprietary/etc/gallery_arcsoft_config.cng:system/etc/gallery_arcsoft_config.cng
 
 PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar\
@@ -280,7 +224,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/lib/libmorpho_panorama_gp.so:system/lib/libmorpho_panorama_gp.so\
     vendor/asus/Z010D/proprietary/lib/libmpbase.so:system/lib/libmpbase.so\
     vendor/asus/Z010D/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so\
-    vendor/asus/Z010D/proprietary/lib/libxditk_ArcSoftMOD.so:system/lib\
+    vendor/asus/Z010D/proprietary/lib/libxditk_ArcSoftMOD.so:system/lib/libxditk_ArcSoftMOD.so\
     vendor/asus/Z010D/proprietary/lib/libxditk_AT.so:system/lib/libxditk_AT.so\
     vendor/asus/Z010D/proprietary/lib/libxditk_ISP.so:system/lib/libxditk_ISP.so\
     vendor/asus/Z010D/proprietary/lib/libxditk_SR.so:system/lib/libxditk_SR.so
