@@ -662,7 +662,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/vendor/lib/liblowi_wifihal.so:system/vendor/lib/liblowi_wifihal.so\
     vendor/asus/Z010D/proprietary/vendor/lib/liblowi_wifihal_nl.so:system/vendor/lib/liblowi_wifihal_nl.so\
     vendor/asus/Z010D/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so\
-    vendor/asus/Z010D/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libmdsprpc.so:system/vendor/lib/libmdsprpc.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libmm-als.so:system/vendor/lib/libmm-als.so\
@@ -776,21 +775,16 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/vendor/lib/libOmxMux.so:system/vendor/lib/libOmxMux.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so\
-    vendor/asus/Z010D/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libprdrmdecrypt.so:system/vendor/lib/libprdrmdecrypt.so\
-    vendor/asus/Z010D/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libqct_resampler.so:system/vendor/lib/libqct_resampler.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so\
-    vendor/asus/Z010D/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so\
-    vendor/asus/Z010D/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so\
-    vendor/asus/Z010D/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so\
@@ -1013,7 +1007,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/vendor/lib64/liblowi_wifihal.so:system/vendor/lib64/liblowi_wifihal.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/liblowi_wifihal_nl.so:system/vendor/lib64/liblowi_wifihal_nl.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so\
-    vendor/asus/Z010D/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libmdsprpc.so:system/vendor/lib64/libmdsprpc.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libmm-abl.so:system/vendor/lib64/libmm-abl.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libmm-abl-oem.so:system/vendor/lib64/libmm-abl-oem.so\
@@ -1050,19 +1043,14 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/vendor/lib64/libOmxAacDec.so:system/vendor/lib64/libOmxAacDec.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libOmxMux.so:system/vendor/lib64/libOmxMux.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so\
-    vendor/asus/Z010D/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so\
-    vendor/asus/Z010D/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libqc-opt.so:system/vendor/lib64/libqc-opt.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libqdp.so:system/vendor/lib64/libqdp.so\
-    vendor/asus/Z010D/proprietary/vendor/lib64/libqmi.so:system/vendor/lib64/libqmi.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libqmi_cci.so:system/vendor/lib64/libqmi_cci.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libqmi_client_helper.so:system/vendor/lib64/libqmi_client_helper.so\
-    vendor/asus/Z010D/proprietary/vendor/lib64/libqmi_client_qmux.so:system/vendor/lib64/libqmi_client_qmux.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libqmi_common_so.so:system/vendor/lib64/libqmi_common_so.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libqmi_csi.so:system/vendor/lib64/libqmi_csi.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libqmi_encdec.so:system/vendor/lib64/libqmi_encdec.so\
-    vendor/asus/Z010D/proprietary/vendor/lib64/libqmiservices.so:system/vendor/lib64/libqmiservices.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libqti-at.so:system/vendor/lib64/libqti-at.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so\

@@ -21,6 +21,14 @@ LOCAL_PATH := $(call my-dir)
 DEVICE_PACKAGE_OVERLAYS += vendor/asus/Z010D/overlay
 
 PRODUCT_PACKAGES += \
+    libperipheral_client \
+    libqmiservices \
+    libqmi \
+    libqcci_legacy \
+    libqmi_client_qmux \
+    libmdmdetect
+
+PRODUCT_PACKAGES += \
     QtiTelephonyService \
     shutdownlistener \
     TimeService \
