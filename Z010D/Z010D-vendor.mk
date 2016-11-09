@@ -20,18 +20,462 @@ LOCAL_PATH := $(call my-dir)
 
 DEVICE_PACKAGE_OVERLAYS += vendor/asus/Z010D/overlay
 
+# ADSP
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/bin/adsprpcd:system/bin/adsprpcd\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so
+
+# Audio
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/vendor/lib/hw/sound_trigger.primary.msm8916.so:system/vendor/lib/hw/sound_trigger.primary.msm8916.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
+
+# Bluetooth
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/bin/btnvtool:system/bin/btnvtool\
+    vendor/asus/Z010D/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init\
+    vendor/asus/Z010D/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so
+
+# Camera
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.vendor.msm8916.so\
+    vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_HL.cfg:system/lib/DIT_AT_BACK_HL.cfg\
+    vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_NORMAL.cfg:system/lib/DIT_AT_BACK_NORMAL.cfg\
+    vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_PREVIEW.cfg:system/lib/DIT_AT_BACK_PREVIEW.cfg\
+    vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_SR.CFG:system/lib/DIT_AT_BACK_SR.CFG\
+    vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_VIDEO.cfg:system/lib/DIT_AT_BACK_VIDEO.cfg\
+    vendor/asus/Z010D/proprietary/lib/DIT_AT_FRONT_HL.cfg:system/lib/DIT_AT_FRONT_HL.cfg\
+    vendor/asus/Z010D/proprietary/lib/DIT_AT_FRONT_NORMAL.cfg:system/lib/DIT_AT_FRONT_NORMAL.cfg\
+    vendor/asus/Z010D/proprietary/lib/DIT_AT_FRONT_PRE.cfg:system/lib/DIT_AT_FRONT_PRE.cfg\
+    vendor/asus/Z010D/proprietary/lib/DIT_AT_FRONT_VIDEO.cfg:system/lib/DIT_AT_FRONT_VIDEO.cfg\
+    vendor/asus/Z010D/proprietary/lib/DITConfig.cfg:system/lib/DITConfig.cfg\
+    vendor/asus/Z010D/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so\
+    vendor/asus/Z010D/proprietary/lib/libarcsoft_face_tracking.so:system/lib/libarcsoft_face_tracking.so\
+    vendor/asus/Z010D/proprietary/lib/libarcsoft_hdr.so:system/lib/libarcsoft_hdr.so\
+    vendor/asus/Z010D/proprietary/lib/libarcsoft_nighthawk.so:system/lib/libarcsoft_nighthawk.so\
+    vendor/asus/Z010D/proprietary/lib/libarcsoft_night_shot.so:system/lib/libarcsoft_night_shot.so\
+    vendor/asus/Z010D/proprietary/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so\
+    vendor/asus/Z010D/proprietary/lib/libarcsoft_piczoom.so:system/lib/libarcsoft_piczoom.so\
+    vendor/asus/Z010D/proprietary/lib/libarcsoft_videostabilizer.so:system/lib/libarcsoft_videostabilizer.so\
+    vendor/asus/Z010D/proprietary/lib/libcameraap.so:system/lib/libcameraap.so\
+    vendor/asus/Z010D/proprietary/lib/libcamera_defocus.so:system/lib/libcamera_defocus.so\
+    vendor/asus/Z010D/proprietary/lib/libcamera_pano.so:system/lib/libcamera_pano.so\
+    vendor/asus/Z010D/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so\
+    vendor/asus/Z010D/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so\
+    vendor/asus/Z010D/proprietary/lib/libmm-omxcore.so:system/lib/libmm-omxcore.so\
+    vendor/asus/Z010D/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so\
+    vendor/asus/Z010D/proprietary/lib/libmorpho_panorama_gp.so:system/lib/libmorpho_panorama_gp.so\
+    vendor/asus/Z010D/proprietary/lib/libmpbase.so:system/lib/libmpbase.so\
+    vendor/asus/Z010D/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so\
+    vendor/asus/Z010D/proprietary/lib64/libOmxVdecHevc.so:system/lib64/libOmxVdecHevc.so\
+    vendor/asus/Z010D/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so\
+    vendor/asus/Z010D/proprietary/lib/libsarcsoftface.so:system/lib/libsarcsoftface.so\
+    vendor/asus/Z010D/proprietary/lib/libsarcsoft_gallery.so:system/lib/libsarcsoft_gallery.so\
+    vendor/asus/Z010D/proprietary/lib/libsphere3.so:system/lib/libsphere3.so\
+    vendor/asus/Z010D/proprietary/lib/libxditk_ArcSoftMOD.so:system/lib/libxditk_ArcSoftMOD.so\
+    vendor/asus/Z010D/proprietary/lib/libxditk_AT.so:system/lib/libxditk_AT.so\
+    vendor/asus/Z010D/proprietary/lib/libxditk_ISP.so:system/lib/libxditk_ISP.so\
+    vendor/asus/Z010D/proprietary/lib/libxditk_SR.so:system/lib/libxditk_SR.so
+
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/lib/style.cng:system/lib/style.cng\
+    vendor/asus/Z010D/proprietary/vendor/etc/style.cng:system/vendor/etc/style.cng
+
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libxditk_DIT_MSM8916.so:system/vendor/lib/libxditk_DIT_MSM8916.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libxditk_DIT_Qualcomm.so:system/vendor/lib/libxditk_DIT_Qualcomm.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libxditk_mmcamera2_stats_algorithm.so:system/vendor/lib/libxditk_mmcamera2_stats_algorithm.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libxditk_Network.so:system/vendor/lib/libxditk_Network.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libmmcamera2_frame_algorithm.so:system/vendor/lib64/libmmcamera2_frame_algorithm.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libmmcamera2_q3a_core.so:system/vendor/lib64/libmmcamera2_q3a_core.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libmmcamera2_stats_algorithm.so:system/vendor/lib64/libmmcamera2_stats_algorithm.so
+
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon\
+    vendor/asus/Z010D/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera2_q3a_core.so:system/vendor/lib/libmmcamera2_q3a_core.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera_dw9761b_eeprom.so:system/vendor/lib/libmmcamera_dw9761b_eeprom.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera_gc0310.so:system/vendor/lib/libmmcamera_gc0310.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera_hi256.so:system/vendor/lib/libmmcamera_hi256.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera_mt9m114.so:system/vendor/lib/libmmcamera_mt9m114.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so:system/vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera_ov5645.so:system/vendor/lib/libmmcamera_ov5645.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera_truly_cm7700_eeprom.so:system/vendor/lib/libmmcamera_truly_cm7700_eeprom.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so
+ 
+# Camera firmware
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw\
+    vendor/asus/Z010D/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw\
+    vendor/asus/Z010D/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw\
+    vendor/asus/Z010D/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw
+
+# CNE/DPM
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/bin/cnd:system/bin/cnd\
+    vendor/asus/Z010D/proprietary/bin/dpmd:system/bin/dpmd\
+    vendor/asus/Z010D/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml\
+    vendor/asus/Z010D/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml\
+    vendor/asus/Z010D/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml\
+    vendor/asus/Z010D/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf\
+    vendor/asus/Z010D/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
+    vendor/asus/Z010D/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar\
+    vendor/asus/Z010D/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar\
+    vendor/asus/Z010D/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar\
+    vendor/asus/Z010D/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar\
+    vendor/asus/Z010D/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar\
+    vendor/asus/Z010D/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libcne.so:system/vendor/lib64/libcne.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libcneconn.so:system/vendor/lib64/libcneconn.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libcneqmiutils.so:system/vendor/lib64/libcneqmiutils.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libdpmfdmgr.so:system/vendor/lib/libdpmfdmgr.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libNimsWrap.so:system/vendor/lib64/libNimsWrap.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so
+
+# DRM
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/bin/qseecomd:system/bin/qseecomd\
+    vendor/asus/Z010D/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
+
+# GPS
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/bin/loc_launcher:system/bin/loc_launcher\
+    vendor/asus/Z010D/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+    vendor/asus/Z010D/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar\
+    vendor/asus/Z010D/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
+    vendor/asus/Z010D/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libdataitems.so:system/vendor/lib64/libdataitems.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libquipc_os_api.so:system/vendor/lib64/libquipc_os_api.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so
+
+# GRAPHICS
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/egl/libESXEGL_adreno.so:system/vendor/lib/egl/libESXEGL_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/egl/libESXGLESv1_CM_adreno.so:system/vendor/lib/egl/libESXGLESv1_CM_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/egl/libESXGLESv2_adreno.so:system/vendor/lib/egl/libESXGLESv2_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/egl/libRBEGL_adreno.so:system/vendor/lib/egl/libRBEGL_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/egl/libRBGLESv1_CM_adreno.so:system/vendor/lib/egl/libRBGLESv1_CM_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/egl/libRBGLESv2_adreno.so:system/vendor/lib/egl/libRBGLESv2_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/egl/eglsubAndroid.so:system/vendor/lib64/egl/eglsubAndroid.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/egl/libESXEGL_adreno.so:system/vendor/lib64/egl/libESXEGL_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/egl/libESXGLESv1_CM_adreno.so:system/vendor/lib64/egl/libESXGLESv1_CM_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/egl/libESXGLESv2_adreno.so:system/vendor/lib64/egl/libESXGLESv2_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/egl/libQTapGLES.so:system/vendor/lib64/egl/libQTapGLES.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/egl/libRBEGL_adreno.so:system/vendor/lib64/egl/libRBEGL_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/egl/libRBGLESv1_CM_adreno.so:system/vendor/lib64/egl/libRBGLESv1_CM_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/egl/libRBGLESv2_adreno.so:system/vendor/lib64/egl/libRBGLESv2_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libadreno_utils.so:system/vendor/lib64/libadreno_utils.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libc2d30-a3xx.so:system/vendor/lib64/libc2d30-a3xx.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libsc-a3xx.so:system/vendor/lib64/libsc-a3xx.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libscale.so:system/vendor/lib64/libscale.so
+
+# Graphics firmware
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw\
+    vendor/asus/Z010D/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw\
+    vendor/asus/Z010D/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw\
+    vendor/asus/Z010D/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw
+
+# Media
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so\
+    vendor/asus/Z010D/proprietary/lib64/libOmxVdecHevc.so:system/lib64/libOmxVdecHevc.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libHevcSwDecoder.so:system/vendor/lib/libHevcSwDecoder.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libHevcSwDecoder.so:system/vendor/lib64/libHevcSwDecoder.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libmmosal.so:system/vendor/lib64/libmmosal.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libOmxAacDec.so:system/vendor/lib64/libOmxAacDec.so
+
+# Perf
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
+    vendor/asus/Z010D/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so
+
+# Postprocessing
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon\
+    vendor/asus/Z010D/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libmm-abl.so:system/vendor/lib64/libmm-abl.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libmm-abl-oem.so:system/vendor/lib64/libmm-abl-oem.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmm-disp-apis.so:system/vendor/lib/libmm-disp-apis.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libmm-disp-apis.so:system/vendor/lib64/libmm-disp-apis.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so
+
+# Power
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/bin/vm_bms:system/bin/vm_bms
+
+# Qualcomm framework
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/bin/irsc_util:system/bin/irsc_util\
+    vendor/asus/Z010D/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libqdp.so:system/vendor/lib64/libqdp.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libqmi_client_helper.so:system/vendor/lib64/libqmi_client_helper.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libqmi_common_so.so:system/vendor/lib64/libqmi_common_so.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libqmi_csi.so:system/vendor/lib64/libqmi_csi.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libqmi_encdec.so:system/vendor/lib64/libqmi_encdec.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libqmi.so:system/vendor/lib64/libqmi.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so
+
+# Radio
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/bin/netmgrd:system/bin/netmgrd\
+    vendor/asus/Z010D/proprietary/bin/qmuxd:system/bin/qmuxd\
+    vendor/asus/Z010D/proprietary/bin/radish:system/bin/radish\
+    vendor/asus/Z010D/proprietary/bin/rfs_access:system/bin/rfs_access\
+    vendor/asus/Z010D/proprietary/bin/rmt_storage:system/bin/rmt_storage\
+    vendor/asus/Z010D/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar\
+    vendor/asus/Z010D/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar\
+    vendor/asus/Z010D/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/asus/Z010D/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libril-qc-radioconfig.so:system/vendor/lib/libril-qc-radioconfig.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so
+
+# Thermal
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/asus/Z010D/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libthermalclient.so:system/vendor/lib64/libthermalclient.so
+
+# Time services
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/bin/time_daemon:system/bin/time_daemon\
+    vendor/asus/Z010D/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libTimeService.so:system/vendor/lib64/libTimeService.so
+
+# Sensor
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/bin/akmd09911:system/bin/akmd09911\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libcalmodule_akm.so:system/vendor/lib64/libcalmodule_akm.so
+
+# Firmware
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/etc/firmware/cmnlib.b00:system/etc/firmware/cmnlib.b00\
+    vendor/asus/Z010D/proprietary/etc/firmware/cmnlib.b01:system/etc/firmware/cmnlib.b01\
+    vendor/asus/Z010D/proprietary/etc/firmware/cmnlib.b02:system/etc/firmware/cmnlib.b02\
+    vendor/asus/Z010D/proprietary/etc/firmware/cmnlib.b03:system/etc/firmware/cmnlib.b03\
+    vendor/asus/Z010D/proprietary/etc/firmware/cmnlib.mdt:system/etc/firmware/cmnlib.mdt\
+    vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b00:system/etc/firmware/keymaster.b00\
+    vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b01:system/etc/firmware/keymaster.b01\
+    vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b02:system/etc/firmware/keymaster.b02\
+    vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b03:system/etc/firmware/keymaster.b03\
+    vendor/asus/Z010D/proprietary/etc/firmware/keymaster.mdt:system/etc/firmware/keymaster.mdt\
+    vendor/asus/Z010D/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw\
+    vendor/asus/Z010D/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw\
+    vendor/asus/Z010D/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00\
+    vendor/asus/Z010D/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01\
+    vendor/asus/Z010D/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02\
+    vendor/asus/Z010D/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03\
+    vendor/asus/Z010D/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04\
+    vendor/asus/Z010D/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b00:system/etc/firmware/wcnss.b00\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b01:system/etc/firmware/wcnss.b01\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b02:system/etc/firmware/wcnss.b02\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b06:system/etc/firmware/wcnss.b06\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b09:system/etc/firmware/wcnss.b09\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b10:system/etc/firmware/wcnss.b10\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b11:system/etc/firmware/wcnss.b11\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt\
+    vendor/asus/Z010D/proprietary/etc/firmware/widevine.b00:system/etc/firmware/widevine.b00\
+    vendor/asus/Z010D/proprietary/etc/firmware/widevine.b01:system/etc/firmware/widevine.b01\
+    vendor/asus/Z010D/proprietary/etc/firmware/widevine.b02:system/etc/firmware/widevine.b02\
+    vendor/asus/Z010D/proprietary/etc/firmware/widevine.b03:system/etc/firmware/widevine.b03\
+    vendor/asus/Z010D/proprietary/etc/firmware/widevine.mdt:system/etc/firmware/widevine.mdt\
+    vendor/asus/Z010D/proprietary/etc/sec_config:system/etc/sec_config \
+    vendor/asus/Z010D/proprietary/etc/gallery_arcsoft_config.cng:system/etc/gallery_arcsoft_config.cng
+
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
+    vendor/asus/Z010D/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
+    vendor/asus/Z010D/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
+    vendor/asus/Z010D/proprietary/lib/DataSet/ditSCidGen/msgchk.db:system/lib/DataSet/ditSCidGen/msgchk.db \
+    vendor/asus/Z010D/proprietary/lib/DataSet/ispDB/ParameterDB.db:system/lib/DataSet/ispDB/ParameterDB.db
+
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_ds_api \
+    libmdmdetect \
+    libdiag \
+    libdsutils \
+    libidl \
+    libqmi_cci \
+    libqmi_client_qmux \
+    libqmiservices \
     libmm-abl \
     libtime_genoff \
-    QtiTelephonyService \
     shutdownlistener \
     TimeService \
     CNEService \
-    com.qualcomm.location \
     dpmserviceapp \
-    qcrilmsgtunnel \
-    QtiTetherService
-
-$(call inherit-product, vendor/asus/Z010D/Z010D-vendor-blobs.mk)
+    qcrilmsgtunnel
