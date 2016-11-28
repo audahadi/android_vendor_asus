@@ -30,22 +30,24 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/vendor/lib/hw/sound_trigger.primary.msm8916.so:system/vendor/lib/hw/sound_trigger.primary.msm8916.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libacdbmapper.so:system/vendor/lib64/libacdbmapper.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libFlacSwDec.so:system/vendor/lib64/libFlacSwDec.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so\
-    vendor/asus/Z010D/proprietary/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so\
     vendor/asus/Z010D/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so\
     vendor/asus/Z010D/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so\
     vendor/asus/Z010D/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so\
     vendor/asus/Z010D/proprietary/lib/soundfx/libicepower.so:system/lib/soundfx/libicepower.so\
-    vendor/asus/Z010D/proprietary/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf\
     vendor/asus/Z010D/proprietary/etc/icesoundconfig.def:system/etc/icesoundconfig.def\
     vendor/asus/Z010D/proprietary/etc/icesoundpresets.def:system/etc/icesoundpresets.def
 
@@ -502,8 +504,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/lib/style.cng:system/lib/style.cng\
-    vendor/asus/Z010D/proprietary/vendor/etc/style.cng:system/vendor/etc/style.cng
-
+    vendor/asus/Z010D/proprietary/vendor/etc/style.cng:system/vendor/etc/style.cng\
+    vendor/asus/Z010D/proprietary/etc/bspcapability.xml:system/etc/bspcapability.xml
 
 # CNE/DPM
 PRODUCT_COPY_FILES += \
@@ -819,7 +821,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/etc/firmware/widevine.b02:system/etc/firmware/widevine.b02\
     vendor/asus/Z010D/proprietary/etc/firmware/widevine.b03:system/etc/firmware/widevine.b03\
     vendor/asus/Z010D/proprietary/etc/firmware/widevine.mdt:system/etc/firmware/widevine.mdt\
-    vendor/asus/Z010D/proprietary/etc/sec_config:system/etc/sec_config \
     vendor/asus/Z010D/proprietary/etc/gallery_arcsoft_config.cng:system/etc/gallery_arcsoft_config.cng
 
 PRODUCT_COPY_FILES += \
