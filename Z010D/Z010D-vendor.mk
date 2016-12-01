@@ -37,6 +37,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libFlacSwDec.so:system/vendor/lib64/libFlacSwDec.so\
+		vendor/asus/Z010D/proprietary/vendor/lib64/libhwdaphal.so:system/vendor/lib64/libhwdaphal.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so\
@@ -44,6 +45,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so\
+		vendor/asus/Z010D/proprietary/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so\
+		vendor/asus/Z010D/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
     vendor/asus/Z010D/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so\
     vendor/asus/Z010D/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so\
     vendor/asus/Z010D/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so\
