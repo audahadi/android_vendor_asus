@@ -698,10 +698,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so
 
-# Power
-PRODUCT_COPY_FILES += \
-    vendor/asus/Z010D/proprietary/bin/vm_bms:system/bin/vm_bms
-
 # Qualcomm framework
 PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/bin/irsc_util:system/bin/irsc_util\
