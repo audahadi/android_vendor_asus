@@ -23,48 +23,53 @@ PRODUCT_COPY_FILES += \
 			vendor/asus/Z010D/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.msm8916.so
 
 PRODUCT_COPY_FILES += \
-	    vendor/asus/Z010D/proprietary/lib/style.cng:system/lib/style.cng\
+			vendor/asus/Z010D/proprietary/lib/style.cng:system/lib/style.cng\
+			vendor/asus/Z010D/proprietary/vendor/etc/style.cng:system/vendor/etc/style.cng\
 			vendor/asus/Z010D/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw\
-	    vendor/asus/Z010D/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw\
-	    vendor/asus/Z010D/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw\
-	    vendor/asus/Z010D/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw\
+			vendor/asus/Z010D/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw\
+			vendor/asus/Z010D/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw\
+			vendor/asus/Z010D/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw\
 			vendor/asus/Z010D/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw\
-	    vendor/asus/Z010D/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw
+			vendor/asus/Z010D/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw
 
 PRODUCT_COPY_FILES += \
-	    vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_HL.cfg:system/lib/DIT_AT_BACK_HL.cfg\
-	    vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_NORMAL.cfg:system/lib/DIT_AT_BACK_NORMAL.cfg\
-	    vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_PREVIEW.cfg:system/lib/DIT_AT_BACK_PREVIEW.cfg\
-	    vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_SR.CFG:system/lib/DIT_AT_BACK_SR.CFG\
-	    vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_VIDEO.cfg:system/lib/DIT_AT_BACK_VIDEO.cfg\
-	    vendor/asus/Z010D/proprietary/lib/DIT_AT_FRONT_HL.cfg:system/lib/DIT_AT_FRONT_HL.cfg\
-	    vendor/asus/Z010D/proprietary/lib/DIT_AT_FRONT_NORMAL.cfg:system/lib/DIT_AT_FRONT_NORMAL.cfg\
-	    vendor/asus/Z010D/proprietary/lib/DIT_AT_FRONT_PRE.cfg:system/lib/DIT_AT_FRONT_PRE.cfg\
-	    vendor/asus/Z010D/proprietary/lib/DIT_AT_FRONT_VIDEO.cfg:system/lib/DIT_AT_FRONT_VIDEO.cfg\
-	    vendor/asus/Z010D/proprietary/lib/DITConfig.cfg:system/lib/DITConfig.cfg\
-	    vendor/asus/Z010D/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so\
-	    vendor/asus/Z010D/proprietary/lib/libarcsoft_face_tracking.so:system/lib/libarcsoft_face_tracking.so\
-	    vendor/asus/Z010D/proprietary/lib/libarcsoft_hdr.so:system/lib/libarcsoft_hdr.so\
-	    vendor/asus/Z010D/proprietary/lib/libarcsoft_nighthawk.so:system/lib/libarcsoft_nighthawk.so\
-	    vendor/asus/Z010D/proprietary/lib/libarcsoft_night_shot.so:system/lib/libarcsoft_night_shot.so\
-	    vendor/asus/Z010D/proprietary/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so\
-	    vendor/asus/Z010D/proprietary/lib/libarcsoft_piczoom.so:system/lib/libarcsoft_piczoom.so\
-	    vendor/asus/Z010D/proprietary/lib/libarcsoft_videostabilizer.so:system/lib/libarcsoft_videostabilizer.so\
-	    vendor/asus/Z010D/proprietary/lib/libcameraap.so:system/lib/libcameraap.so\
-	    vendor/asus/Z010D/proprietary/lib/libcamera_defocus.so:system/lib/libcamera_defocus.so\
-	    vendor/asus/Z010D/proprietary/lib/libcamera_pano.so:system/lib/libcamera_pano.so\
-	    vendor/asus/Z010D/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so\
-	    vendor/asus/Z010D/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so\
-	    vendor/asus/Z010D/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so\
-	    vendor/asus/Z010D/proprietary/lib/libmorpho_panorama_gp.so:system/lib/libmorpho_panorama_gp.so\
-	    vendor/asus/Z010D/proprietary/lib/libsarcsoftface.so:system/lib/libsarcsoftface.so \
-	    vendor/asus/Z010D/proprietary/lib/libsarcsoft_gallery.so:system/lib/libsarcsoft_gallery \
-	    vendor/asus/Z010D/proprietary/lib/libmpbase.so:system/lib/libmpbase.so\
-	    vendor/asus/Z010D/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so\
-	    vendor/asus/Z010D/proprietary/lib/libxditk_ArcSoftMOD.so:system/lib\
-	    vendor/asus/Z010D/proprietary/lib/libxditk_AT.so:system/lib/libxditk_AT.so\
-	    vendor/asus/Z010D/proprietary/lib/libxditk_ISP.so:system/lib/libxditk_ISP.so\
-	    vendor/asus/Z010D/proprietary/lib/libxditk_SR.so:system/lib/libxditk_SR.so
+			vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_HL.cfg:system/lib/DIT_AT_BACK_HL.cfg\
+			vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_NORMAL.cfg:system/lib/DIT_AT_BACK_NORMAL.cfg\
+			vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_PREVIEW.cfg:system/lib/DIT_AT_BACK_PREVIEW.cfg\
+			vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_SR.CFG:system/lib/DIT_AT_BACK_SR.CFG\
+			vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_VIDEO.cfg:system/lib/DIT_AT_BACK_VIDEO.cfg\
+			vendor/asus/Z010D/proprietary/lib/DIT_AT_FRONT_HL.cfg:system/lib/DIT_AT_FRONT_HL.cfg\
+			vendor/asus/Z010D/proprietary/lib/DIT_AT_FRONT_NORMAL.cfg:system/lib/DIT_AT_FRONT_NORMAL.cfg\
+			vendor/asus/Z010D/proprietary/lib/DIT_AT_FRONT_PRE.cfg:system/lib/DIT_AT_FRONT_PRE.cfg\
+			vendor/asus/Z010D/proprietary/lib/DIT_AT_FRONT_VIDEO.cfg:system/lib/DIT_AT_FRONT_VIDEO.cfg\
+			vendor/asus/Z010D/proprietary/lib/DITConfig.cfg:system/lib/DITConfig.cfg\
+			vendor/asus/Z010D/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so\
+			vendor/asus/Z010D/proprietary/lib/libarcsoft_face_tracking.so:system/lib/libarcsoft_face_tracking.so\
+			vendor/asus/Z010D/proprietary/lib/libarcsoft_hdr.so:system/lib/libarcsoft_hdr.so\
+			vendor/asus/Z010D/proprietary/lib/libarcsoft_nighthawk.so:system/lib/libarcsoft_nighthawk.so\
+			vendor/asus/Z010D/proprietary/lib/libarcsoft_night_shot.so:system/lib/libarcsoft_night_shot.so\
+			vendor/asus/Z010D/proprietary/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so\
+			vendor/asus/Z010D/proprietary/lib/libarcsoft_piczoom.so:system/lib/libarcsoft_piczoom.so\
+			vendor/asus/Z010D/proprietary/lib/libarcsoft_videostabilizer.so:system/lib/libarcsoft_videostabilizer.so\
+			vendor/asus/Z010D/proprietary/lib/libcameraap.so:system/lib/libcameraap.so\
+			vendor/asus/Z010D/proprietary/lib/libcamera_defocus.so:system/lib/libcamera_defocus.so\
+			vendor/asus/Z010D/proprietary/lib/libcamera_pano.so:system/lib/libcamera_pano.so\
+			vendor/asus/Z010D/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so\
+			vendor/asus/Z010D/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so\
+			vendor/asus/Z010D/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so\
+			vendor/asus/Z010D/proprietary/lib/libmorpho_panorama_gp.so:system/lib/libmorpho_panorama_gp.so\
+			vendor/asus/Z010D/proprietary/lib/libmm-omxcore.so:system/lib/libmm-omxcore.so\
+			vendor/asus/Z010D/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so\
+			vendor/asus/Z010D/proprietary/lib64/libOmxVdecHevc.so:system/lib64/libOmxVdecHevc.so\
+			vendor/asus/Z010D/proprietary/lib/libsphere3.so:system/lib/libsphere3.so\
+			vendor/asus/Z010D/proprietary/lib/libsarcsoftface.so:system/lib/libsarcsoftface.so \
+			vendor/asus/Z010D/proprietary/lib/libsarcsoft_gallery.so:system/lib/libsarcsoft_gallery \
+			vendor/asus/Z010D/proprietary/lib/libmpbase.so:system/lib/libmpbase.so\
+			vendor/asus/Z010D/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so\
+			vendor/asus/Z010D/proprietary/lib/libxditk_ArcSoftMOD.so:system/lib\
+			vendor/asus/Z010D/proprietary/lib/libxditk_AT.so:system/lib/libxditk_AT.so\
+			vendor/asus/Z010D/proprietary/lib/libxditk_ISP.so:system/lib/libxditk_ISP.so\
+			vendor/asus/Z010D/proprietary/lib/libxditk_SR.so:system/lib/libxditk_SR.so
 
 	#libactuator
 	PRODUCT_COPY_FILES += \

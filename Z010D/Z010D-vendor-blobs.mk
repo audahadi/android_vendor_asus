@@ -194,7 +194,10 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/asus/Z010D/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
     vendor/asus/Z010D/proprietary/lib/DataSet/ditSCidGen/msgchk.db:system/lib/DataSet/ditSCidGen/msgchk.db \
-    vendor/asus/Z010D/proprietary/lib/DataSet/ispDB/ParameterDB.db:system/lib/DataSet/ispDB/ParameterDB.db
+    vendor/asus/Z010D/proprietary/lib/DataSet/ispDB/ParameterDB.db:system/lib/DataSet/ispDB/ParameterDB.db \
+		vendor/asus/Z010D/proprietary/vendor/etc/RIDL/GoldenLogmask.dmc:system/vendor/etc/RIDL/GoldenLogmask.dmc \
+		vendor/asus/Z010D/proprietary/vendor/etc/RIDL/qdss.cfg:system/vendor/etc/RIDL/qdss.cfg \
+		vendor/asus/Z010D/proprietary/vendor/etc/RIDL/RIDL.db:system/vendor/etc/RIDL/RIDL.db
 
 PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/lib/hw/lights.msm8916.so:system/lib/hw/lights.msm8916.so
@@ -203,9 +206,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp\
     vendor/asus/Z010D/proprietary/vendor/bin/chamomile_provision:system/vendor/bin/chamomile_provision\
     vendor/asus/Z010D/proprietary/vendor/etc/calmodule.cfg:system/vendor/etc/calmodule.cfg\
-    vendor/asus/Z010D/proprietary/vendor/etc/fallback_fonts.xml:system/vendor/etc/fallback_fonts.xml\
-    vendor/asus/Z010D/proprietary/vendor/etc/style.cng:system/vendor/etc/style.cng\
-    vendor/asus/Z010D/proprietary/vendor/etc/workspace_grid_setting.xml:system/vendor/etc/workspace_grid_setting.xml\
     vendor/asus/Z010D/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so\
@@ -624,5 +624,4 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/mediadrm/libprmediadrmplugin.so:system/vendor/lib64/mediadrm/libprmediadrmplugin.so\
     vendor/asus/Z010D/proprietary/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd\
-    vendor/asus/Z010D/proprietary/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd\
-    vendor/asus/Z010D/proprietary/vendor/speccfg/carrier_regional_pack_conf.xml:system/vendor/speccfg/carrier_regional_pack_conf.xml
+    vendor/asus/Z010D/proprietary/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
