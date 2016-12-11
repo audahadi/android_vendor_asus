@@ -40,3 +40,4 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, vendor/asus/Z010D/Z010D-vendor-blobs.mk)
 $(call inherit-product, vendor/asus/Z010D/Z010D-vendor-camera.mk)
 $(call inherit-product, vendor/asus/Z010D/Z010D-vendor-sensor.mk)
+$(call inherit-product, vendor/asus/Z010D/Z010D-vendor-qcom-graphic.mk)
