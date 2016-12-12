@@ -117,10 +117,7 @@ PRODUCT_COPY_FILES += \
 		vendor/asus/Z010D/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
 		vendor/asus/Z010D/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so\
 		vendor/asus/Z010D/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so\
-		vendor/asus/Z010D/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so\
-		vendor/asus/Z010D/proprietary/lib/soundfx/libicepower.so:system/lib/soundfx/libicepower.so\
-		vendor/asus/Z010D/proprietary/etc/icesoundconfig.def:system/etc/icesoundconfig.def\
-		vendor/asus/Z010D/proprietary/etc/icesoundpresets.def:system/etc/icesoundpresets.def
+		vendor/asus/Z010D/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
@@ -172,7 +169,6 @@ PRODUCT_COPY_FILES += \
 
 # Postprocessing
 PRODUCT_COPY_FILES += \
-		vendor/asus/Z010D/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon\
 		vendor/asus/Z010D/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so\
 		vendor/asus/Z010D/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so\
 		vendor/asus/Z010D/proprietary/vendor/lib64/libmm-abl.so:system/vendor/lib64/libmm-abl.so\
