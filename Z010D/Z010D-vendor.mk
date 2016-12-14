@@ -104,7 +104,24 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/lib/libxditk_SR.so:system/lib/libxditk_SR.so
 
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z010D/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon\
+		vendor/asus/Z010D/proprietary/bin/camera_flash:system/bin/camera_flash\
+		vendor/asus/Z010D/proprietary/bin/camera_flash2:system/bin/camera_flash2\
+		vendor/asus/Z010D/proprietary/bin/CameraModule:system/bin/CameraModule\
+		vendor/asus/Z010D/proprietary/bin/CameraOTP:system/bin/CameraOTP\
+		vendor/asus/Z010D/proprietary/bin/CameraResolution:system/bin/CameraResolution\
+		vendor/asus/Z010D/proprietary/bin/CameraTest:system/bin/CameraTest\
+		vendor/asus/Z010D/proprietary/bin/Camera_Unique_ID:system/bin/Camera_Unique_ID\
+		vendor/asus/Z010D/proprietary/bin/dit_af_cali:system/bin/dit_af_cali\
+		vendor/asus/Z010D/proprietary/bin/dit_cali:system/bin/dit_cali\
+		vendor/asus/Z010D/proprietary/bin/LaserFocus_CalStart:system/bin/LaserFocus_CalStart\
+		vendor/asus/Z010D/proprietary/bin/LaserFocus_enforce:system/bin/LaserFocus_enforce\
+		vendor/asus/Z010D/proprietary/bin/LaserFocus_on:system/bin/LaserFocus_on\
+		vendor/asus/Z010D/proprietary/bin/LaserFocus_Status:system/bin/LaserFocus_Status\
+		vendor/asus/Z010D/proprietary/bin/LaserOn:system/bin/LaserOn\
+		vendor/asus/Z010D/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon\
+		vendor/asus/Z010D/proprietary/bin/ZC550KL_afCali:system/bin/ZC550KL_afCali\
+		vendor/asus/Z010D/proprietary/bin/ZC550KL_OV5670_DUT_CONFIG:system/bin/ZC550KL_OV5670_DUT_CONFIG\
+		vendor/asus/Z010D/proprietary/bin/ZC550KL_T4K37_DUT_CONFIG:system/bin/ZC550KL_T4K37_DUT_CONFIG\
     vendor/asus/Z010D/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so\
