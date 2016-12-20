@@ -563,6 +563,8 @@ PRODUCT_COPY_FILES += \
 # DRM
 PRODUCT_COPY_FILES += \
 	vendor/asus/Z00E/proprietary/bin/qseecomd:system/bin/qseecomd\
+	vendor/asus/Z00E/proprietary/lib/hw/keystore.qcom.so:system/lib/hw/keystore.qcom.so \
+	vendor/asus/Z00E/proprietary/lib64/hw/keystore.qcom.so:system/lib64/hw/keystore.qcom.so \
 	vendor/asus/Z00E/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so\
 	vendor/asus/Z00E/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so\
 	vendor/asus/Z00E/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so\
