@@ -46,4 +46,26 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf\
     vendor/asus/Z010D/proprietary/vendor/etc/calmodule.cfg:system/vendor/etc/calmodule.cfg
 
+# DRM
+PRODUCT_COPY_FILES += \
+	  vendor/asus/Z010D/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so\
+		vendor/asus/Z010D/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so
+
+# Firmware
+PRODUCT_COPY_FILES += \
+		vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b00:system/etc/firmware/keymaster.b00\
+		vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b01:system/etc/firmware/keymaster.b01\
+		vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b02:system/etc/firmware/keymaster.b02\
+		vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b03:system/etc/firmware/keymaster.b03\
+		vendor/asus/Z010D/proprietary/etc/firmware/keymaster.mdt:system/etc/firmware/keymaster.mdt\
+		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b00:system/etc/firmware/wcnss.b00\
+		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b01:system/etc/firmware/wcnss.b01\
+		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b02:system/etc/firmware/wcnss.b02\
+		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04\
+		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b06:system/etc/firmware/wcnss.b06\
+		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b09:system/etc/firmware/wcnss.b09\
+		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b10:system/etc/firmware/wcnss.b10\
+		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b11:system/etc/firmware/wcnss.b11\
+		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt
+
 $(call inherit-product, vendor/asus/msm8916-common/msm8916-common-vendor.mk)

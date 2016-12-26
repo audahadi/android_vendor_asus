@@ -575,8 +575,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so\
@@ -788,11 +786,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/etc/firmware/cmnlib.b02:system/etc/firmware/cmnlib.b02\
     vendor/asus/msm8916-common/proprietary/etc/firmware/cmnlib.b03:system/etc/firmware/cmnlib.b03\
     vendor/asus/msm8916-common/proprietary/etc/firmware/cmnlib.mdt:system/etc/firmware/cmnlib.mdt\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.b00:system/etc/firmware/keymaster.b00\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.b01:system/etc/firmware/keymaster.b01\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.b02:system/etc/firmware/keymaster.b02\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.b03:system/etc/firmware/keymaster.b03\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.mdt:system/etc/firmware/keymaster.mdt\
     vendor/asus/msm8916-common/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw\
     vendor/asus/msm8916-common/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw\
     vendor/asus/msm8916-common/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00\
@@ -801,15 +794,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03\
     vendor/asus/msm8916-common/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04\
     vendor/asus/msm8916-common/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/wcnss.b00:system/etc/firmware/wcnss.b00\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/wcnss.b01:system/etc/firmware/wcnss.b01\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/wcnss.b02:system/etc/firmware/wcnss.b02\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/wcnss.b06:system/etc/firmware/wcnss.b06\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/wcnss.b09:system/etc/firmware/wcnss.b09\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/wcnss.b10:system/etc/firmware/wcnss.b10\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/wcnss.b11:system/etc/firmware/wcnss.b11\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt\
     vendor/asus/msm8916-common/proprietary/etc/firmware/widevine.b00:system/etc/firmware/widevine.b00\
     vendor/asus/msm8916-common/proprietary/etc/firmware/widevine.b01:system/etc/firmware/widevine.b01\
     vendor/asus/msm8916-common/proprietary/etc/firmware/widevine.b02:system/etc/firmware/widevine.b02\
