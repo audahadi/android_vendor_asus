@@ -21,51 +21,135 @@ LOCAL_PATH := $(call my-dir)
 DEVICE_PACKAGE_OVERLAYS += vendor/asus/Z010D/overlay
 
 PRODUCT_COPY_FILES += \
-		vendor/asus/Z010D/proprietary/bin/ZC550KL_afCali:system/bin/ZC550KL_afCali\
-		vendor/asus/Z010D/proprietary/bin/ZC550KL_OV5670_DUT_CONFIG:system/bin/ZC550KL_OV5670_DUT_CONFIG\
-		vendor/asus/Z010D/proprietary/bin/ZC550KL_T4K37_DUT_CONFIG:system/bin/ZC550KL_T4K37_DUT_CONFIG
+	vendor/asus/Z010D/proprietary/bin/BackupCalibrationData:system/bin/BackupCalibrationData \
+	vendor/asus/Z010D/proprietary/bin/RestoreCalibrationData:system/bin/RestoreCalibrationData \
+	vendor/asus/Z010D/proprietary/bin/camera_flash:system/bin/camera_flash\
+	vendor/asus/Z010D/proprietary/bin/camera_flash2:system/bin/camera_flash2\
+	vendor/asus/Z010D/proprietary/bin/CameraModule:system/bin/CameraModule\
+	vendor/asus/Z010D/proprietary/bin/CameraOTP:system/bin/CameraOTP\
+	vendor/asus/Z010D/proprietary/bin/CameraResolution:system/bin/CameraResolution\
+	vendor/asus/Z010D/proprietary/bin/CameraTest:system/bin/CameraTest\
+	vendor/asus/Z010D/proprietary/bin/Camera_Unique_ID:system/bin/Camera_Unique_ID\
+	vendor/asus/Z010D/proprietary/bin/dit_af_cali:system/bin/dit_af_cali\
+	vendor/asus/Z010D/proprietary/bin/dit_cali:system/bin/dit_cali\
+	vendor/asus/Z010D/proprietary/bin/LaserFocus_CalStart:system/bin/LaserFocus_CalStart\
+	vendor/asus/Z010D/proprietary/bin/LaserFocus_enforce:system/bin/LaserFocus_enforce\
+	vendor/asus/Z010D/proprietary/bin/LaserFocus_on:system/bin/LaserFocus_on\
+	vendor/asus/Z010D/proprietary/bin/LaserFocus_Status:system/bin/LaserFocus_Status\
+	vendor/asus/Z010D/proprietary/bin/LaserOn:system/bin/LaserOn\
+	vendor/asus/Z010D/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon\
+	vendor/asus/Z010D/proprietary/bin/ZC550KL_afCali:system/bin/ZC550KL_afCali\
+	vendor/asus/Z010D/proprietary/bin/ZC550KL_OV5670_DUT_CONFIG:system/bin/ZC550KL_OV5670_DUT_CONFIG\
+	vendor/asus/Z010D/proprietary/bin/ZC550KL_T4K37_DUT_CONFIG:system/bin/ZC550KL_T4K37_DUT_CONFIG
+
+# Camera
+PRODUCT_COPY_FILES += \
+	vendor/asus/Z010D/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.vendor.msm8916.so\
+	vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_HL.cfg:system/lib/DIT_AT_BACK_HL.cfg\
+	vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_NORMAL.cfg:system/lib/DIT_AT_BACK_NORMAL.cfg\
+	vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_PREVIEW.cfg:system/lib/DIT_AT_BACK_PREVIEW.cfg\
+	vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_SR.CFG:system/lib/DIT_AT_BACK_SR.CFG\
+	vendor/asus/Z010D/proprietary/lib/DIT_AT_BACK_VIDEO.cfg:system/lib/DIT_AT_BACK_VIDEO.cfg\
+	vendor/asus/Z010D/proprietary/lib/DIT_AT_FRONT_HL.cfg:system/lib/DIT_AT_FRONT_HL.cfg\
+	vendor/asus/Z010D/proprietary/lib/DIT_AT_FRONT_NORMAL.cfg:system/lib/DIT_AT_FRONT_NORMAL.cfg\
+	vendor/asus/Z010D/proprietary/lib/DIT_AT_FRONT_PRE.cfg:system/lib/DIT_AT_FRONT_PRE.cfg\
+	vendor/asus/Z010D/proprietary/lib/DIT_AT_FRONT_VIDEO.cfg:system/lib/DIT_AT_FRONT_VIDEO.cfg\
+	vendor/asus/Z010D/proprietary/lib/DITConfig.cfg:system/lib/DITConfig.cfg\
+	vendor/asus/Z010D/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so\
+	vendor/asus/Z010D/proprietary/lib/libarcsoft_face_tracking.so:system/lib/libarcsoft_face_tracking.so\
+	vendor/asus/Z010D/proprietary/lib/libarcsoft_hdr.so:system/lib/libarcsoft_hdr.so\
+	vendor/asus/Z010D/proprietary/lib/libarcsoft_nighthawk.so:system/lib/libarcsoft_nighthawk.so\
+	vendor/asus/Z010D/proprietary/lib/libarcsoft_night_shot.so:system/lib/libarcsoft_night_shot.so\
+	vendor/asus/Z010D/proprietary/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so\
+	vendor/asus/Z010D/proprietary/lib/libarcsoft_piczoom.so:system/lib/libarcsoft_piczoom.so\
+	vendor/asus/Z010D/proprietary/lib/libarcsoft_videostabilizer.so:system/lib/libarcsoft_videostabilizer.so\
+	vendor/asus/Z010D/proprietary/lib/libcameraap.so:system/lib/libcameraap.so\
+	vendor/asus/Z010D/proprietary/lib/libcamera_defocus.so:system/lib/libcamera_defocus.so\
+	vendor/asus/Z010D/proprietary/lib/libcamera_pano.so:system/lib/libcamera_pano.so\
+	vendor/asus/Z010D/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so\
+	vendor/asus/Z010D/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so\
+	vendor/asus/Z010D/proprietary/lib/libmm-omxcore.so:system/lib/libmm-omxcore.so\
+	vendor/asus/Z010D/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so\
+	vendor/asus/Z010D/proprietary/lib/libmorpho_panorama_gp.so:system/lib/libmorpho_panorama_gp.so\
+	vendor/asus/Z010D/proprietary/lib/libmpbase.so:system/lib/libmpbase.so\
+	vendor/asus/Z010D/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so\
+	vendor/asus/Z010D/proprietary/lib64/libOmxVdecHevc.so:system/lib64/libOmxVdecHevc.so\
+	vendor/asus/Z010D/proprietary/lib/libjpeggifcodec.so:system/lib/libjpeggifcodec.so\
+	vendor/asus/Z010D/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so\
+	vendor/asus/Z010D/proprietary/lib/libsarcsoftface.so:system/lib/libsarcsoftface.so\
+	vendor/asus/Z010D/proprietary/lib/libsarcsoft_gallery.so:system/lib/libsarcsoft_gallery.so\
+	vendor/asus/Z010D/proprietary/lib/libsphere3.so:system/lib/libsphere3.so\
+	vendor/asus/Z010D/proprietary/lib/libxditk_ArcSoftMOD.so:system/lib/libxditk_ArcSoftMOD.so\
+	vendor/asus/Z010D/proprietary/lib/libxditk_AT.so:system/lib/libxditk_AT.so\
+	vendor/asus/Z010D/proprietary/lib/libxditk_ISP.so:system/lib/libxditk_ISP.so\
+	vendor/asus/Z010D/proprietary/lib/libxditk_SR.so:system/lib/libxditk_SR.so
+
+PRODUCT_COPY_FILES += \
+	vendor/asus/Z010D/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so\
+	vendor/asus/Z010D/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/libxditk_DIT_MSM8916.so:system/vendor/lib/libxditk_DIT_MSM8916.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/libxditk_DIT_Qualcomm.so:system/vendor/lib/libxditk_DIT_Qualcomm.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/libxditk_mmcamera2_stats_algorithm.so:system/vendor/lib/libxditk_mmcamera2_stats_algorithm.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/libxditk_Network.so:system/vendor/lib/libxditk_Network.so
 
 # Sensor
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z010D/proprietary/bin/akmd09911:system/bin/akmd09911\
-    vendor/asus/Z010D/proprietary/lib/hw/sensors.AKM.msm8916.so:system/lib/hw/sensors.AKM.msm8916.so\
-    vendor/asus/Z010D/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so\
-    vendor/asus/Z010D/proprietary/lib/hw/sensors.PS_ALS.msm8916.so:system/lib/hw/sensors.PS_ALS.msm8916.so\
-    vendor/asus/Z010D/proprietary/lib/hw/sensors.zenMotion.msm8916.so:system/lib/hw/sensors.zenMotion.msm8916.so\
-    vendor/asus/Z010D/proprietary/lib64/hw/sensors.AKM.msm8916.so:system/lib64/hw/sensors.AKM.msm8916.so\
-    vendor/asus/Z010D/proprietary/lib64/hw/sensors.msm8916.so:system/lib64/hw/sensors.msm8916.so\
-    vendor/asus/Z010D/proprietary/lib64/hw/sensors.PS_ALS.msm8916.so:system/lib64/hw/sensors.PS_ALS.msm8916.so\
-    vendor/asus/Z010D/proprietary/lib64/hw/sensors.zenMotion.msm8916.so:system/lib64/hw/sensors.zenMotion.msm8916.so\
-    vendor/asus/Z010D/proprietary/vendor/lib/libcalmodule_gyroscope.so:system/vendor/lib/libcalmodule_gyroscope.so\
-    vendor/asus/Z010D/proprietary/vendor/lib/libcalmodule_common.so:system/vendor/lib/libcalmodule_common.so\
-    vendor/asus/Z010D/proprietary/vendor/lib64/libcalmodule_akm.so:system/vendor/lib64/libcalmodule_akm.so\
-    vendor/asus/Z010D/proprietary/vendor/lib64/libcalmodule_gyroscope.so:system/vendor/lib64/libcalmodule_gyroscope.so\
-    vendor/asus/Z010D/proprietary/vendor/lib64/libcalmodule_common.so:system/vendor/lib64/libcalmodule_common.so\
-    vendor/asus/Z010D/proprietary/lib/libcmdthread.so:system/lib/libcmdthread.so\
-    vendor/asus/Z010D/proprietary/lib64/libcmdthread.so:system/lib64/libcmdthread.so\
-    vendor/asus/Z010D/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf\
-    vendor/asus/Z010D/proprietary/vendor/etc/calmodule.cfg:system/vendor/etc/calmodule.cfg
+	vendor/asus/Z010D/proprietary/bin/akmd09911:system/bin/akmd09911\
+	vendor/asus/Z010D/proprietary/lib/hw/sensors.AKM.msm8916.so:system/lib/hw/sensors.AKM.msm8916.so\
+	vendor/asus/Z010D/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so\
+	vendor/asus/Z010D/proprietary/lib/hw/sensors.PS_ALS.msm8916.so:system/lib/hw/sensors.PS_ALS.msm8916.so\
+	vendor/asus/Z010D/proprietary/lib/hw/sensors.zenMotion.msm8916.so:system/lib/hw/sensors.zenMotion.msm8916.so\
+	vendor/asus/Z010D/proprietary/lib64/hw/sensors.AKM.msm8916.so:system/lib64/hw/sensors.AKM.msm8916.so\
+	vendor/asus/Z010D/proprietary/lib64/hw/sensors.msm8916.so:system/lib64/hw/sensors.msm8916.so\
+	vendor/asus/Z010D/proprietary/lib64/hw/sensors.PS_ALS.msm8916.so:system/lib64/hw/sensors.PS_ALS.msm8916.so\
+	vendor/asus/Z010D/proprietary/lib64/hw/sensors.zenMotion.msm8916.so:system/lib64/hw/sensors.zenMotion.msm8916.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/libcalmodule_gyroscope.so:system/vendor/lib/libcalmodule_gyroscope.so\
+	vendor/asus/Z010D/proprietary/vendor/lib/libcalmodule_common.so:system/vendor/lib/libcalmodule_common.so\
+	vendor/asus/Z010D/proprietary/vendor/lib64/libcalmodule_akm.so:system/vendor/lib64/libcalmodule_akm.so\
+	vendor/asus/Z010D/proprietary/vendor/lib64/libcalmodule_gyroscope.so:system/vendor/lib64/libcalmodule_gyroscope.so\
+	vendor/asus/Z010D/proprietary/vendor/lib64/libcalmodule_common.so:system/vendor/lib64/libcalmodule_common.so\
+	vendor/asus/Z010D/proprietary/lib/libcmdthread.so:system/lib/libcmdthread.so\
+	vendor/asus/Z010D/proprietary/lib64/libcmdthread.so:system/lib64/libcmdthread.so\
+	vendor/asus/Z010D/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf\
+	vendor/asus/Z010D/proprietary/vendor/etc/calmodule.cfg:system/vendor/etc/calmodule.cfg
 
 # DRM
 PRODUCT_COPY_FILES += \
-	  vendor/asus/Z010D/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so\
-		vendor/asus/Z010D/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so
+	vendor/asus/Z010D/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so\
+	vendor/asus/Z010D/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so
 
 # Firmware
 PRODUCT_COPY_FILES += \
-		vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b00:system/etc/firmware/keymaster.b00\
-		vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b01:system/etc/firmware/keymaster.b01\
-		vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b02:system/etc/firmware/keymaster.b02\
-		vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b03:system/etc/firmware/keymaster.b03\
-		vendor/asus/Z010D/proprietary/etc/firmware/keymaster.mdt:system/etc/firmware/keymaster.mdt\
-		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b00:system/etc/firmware/wcnss.b00\
-		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b01:system/etc/firmware/wcnss.b01\
-		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b02:system/etc/firmware/wcnss.b02\
-		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04\
-		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b06:system/etc/firmware/wcnss.b06\
-		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b09:system/etc/firmware/wcnss.b09\
-		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b10:system/etc/firmware/wcnss.b10\
-		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b11:system/etc/firmware/wcnss.b11\
-		vendor/asus/Z010D/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt
+	vendor/asus/Z010D/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00\
+	vendor/asus/Z010D/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01\
+	vendor/asus/Z010D/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02\
+	vendor/asus/Z010D/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03\
+	vendor/asus/Z010D/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04\
+	vendor/asus/Z010D/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt\
+	vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b00:system/etc/firmware/keymaster.b00\
+	vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b01:system/etc/firmware/keymaster.b01\
+	vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b02:system/etc/firmware/keymaster.b02\
+	vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b03:system/etc/firmware/keymaster.b03\
+	vendor/asus/Z010D/proprietary/etc/firmware/keymaster.mdt:system/etc/firmware/keymaster.mdt\
+	vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b00:system/etc/firmware/wcnss.b00\
+	vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b01:system/etc/firmware/wcnss.b01\
+	vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b02:system/etc/firmware/wcnss.b02\
+	vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04\
+	vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b06:system/etc/firmware/wcnss.b06\
+	vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b09:system/etc/firmware/wcnss.b09\
+	vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b10:system/etc/firmware/wcnss.b10\
+	vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b11:system/etc/firmware/wcnss.b11\
+	vendor/asus/Z010D/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt
 
 $(call inherit-product, vendor/asus/msm8916-common/msm8916-common-vendor.mk)

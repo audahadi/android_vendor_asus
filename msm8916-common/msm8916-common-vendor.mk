@@ -61,84 +61,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so
 
-# Camera
-PRODUCT_COPY_FILES += \
-    vendor/asus/msm8916-common/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.vendor.msm8916.so\
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_BACK_HL.cfg:system/lib/DIT_AT_BACK_HL.cfg\
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_BACK_NORMAL.cfg:system/lib/DIT_AT_BACK_NORMAL.cfg\
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_BACK_PREVIEW.cfg:system/lib/DIT_AT_BACK_PREVIEW.cfg\
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_BACK_SR.CFG:system/lib/DIT_AT_BACK_SR.CFG\
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_BACK_VIDEO.cfg:system/lib/DIT_AT_BACK_VIDEO.cfg\
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_FRONT_HL.cfg:system/lib/DIT_AT_FRONT_HL.cfg\
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_FRONT_NORMAL.cfg:system/lib/DIT_AT_FRONT_NORMAL.cfg\
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_FRONT_PRE.cfg:system/lib/DIT_AT_FRONT_PRE.cfg\
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_FRONT_VIDEO.cfg:system/lib/DIT_AT_FRONT_VIDEO.cfg\
-    vendor/asus/msm8916-common/proprietary/lib/DITConfig.cfg:system/lib/DITConfig.cfg\
-    vendor/asus/msm8916-common/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so\
-    vendor/asus/msm8916-common/proprietary/lib/libarcsoft_face_tracking.so:system/lib/libarcsoft_face_tracking.so\
-    vendor/asus/msm8916-common/proprietary/lib/libarcsoft_hdr.so:system/lib/libarcsoft_hdr.so\
-    vendor/asus/msm8916-common/proprietary/lib/libarcsoft_nighthawk.so:system/lib/libarcsoft_nighthawk.so\
-    vendor/asus/msm8916-common/proprietary/lib/libarcsoft_night_shot.so:system/lib/libarcsoft_night_shot.so\
-    vendor/asus/msm8916-common/proprietary/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so\
-    vendor/asus/msm8916-common/proprietary/lib/libarcsoft_piczoom.so:system/lib/libarcsoft_piczoom.so\
-    vendor/asus/msm8916-common/proprietary/lib/libarcsoft_videostabilizer.so:system/lib/libarcsoft_videostabilizer.so\
-    vendor/asus/msm8916-common/proprietary/lib/libcameraap.so:system/lib/libcameraap.so\
-    vendor/asus/msm8916-common/proprietary/lib/libcamera_defocus.so:system/lib/libcamera_defocus.so\
-    vendor/asus/msm8916-common/proprietary/lib/libcamera_pano.so:system/lib/libcamera_pano.so\
-    vendor/asus/msm8916-common/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so\
-    vendor/asus/msm8916-common/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so\
-    vendor/asus/msm8916-common/proprietary/lib/libmm-omxcore.so:system/lib/libmm-omxcore.so\
-    vendor/asus/msm8916-common/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so\
-    vendor/asus/msm8916-common/proprietary/lib/libmorpho_panorama_gp.so:system/lib/libmorpho_panorama_gp.so\
-    vendor/asus/msm8916-common/proprietary/lib/libmpbase.so:system/lib/libmpbase.so\
-    vendor/asus/msm8916-common/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so\
-    vendor/asus/msm8916-common/proprietary/lib64/libOmxVdecHevc.so:system/lib64/libOmxVdecHevc.so\
-    vendor/asus/msm8916-common/proprietary/lib/libjpeggifcodec.so:system/lib/libjpeggifcodec.so\
-    vendor/asus/msm8916-common/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so\
-    vendor/asus/msm8916-common/proprietary/lib/libsarcsoftface.so:system/lib/libsarcsoftface.so\
-    vendor/asus/msm8916-common/proprietary/lib/libsarcsoft_gallery.so:system/lib/libsarcsoft_gallery.so\
-    vendor/asus/msm8916-common/proprietary/lib/libsphere3.so:system/lib/libsphere3.so\
-    vendor/asus/msm8916-common/proprietary/lib/libxditk_ArcSoftMOD.so:system/lib/libxditk_ArcSoftMOD.so\
-    vendor/asus/msm8916-common/proprietary/lib/libxditk_AT.so:system/lib/libxditk_AT.so\
-    vendor/asus/msm8916-common/proprietary/lib/libxditk_ISP.so:system/lib/libxditk_ISP.so\
-    vendor/asus/msm8916-common/proprietary/lib/libxditk_SR.so:system/lib/libxditk_SR.so
-
-PRODUCT_COPY_FILES += \
-		vendor/asus/msm8916-common/proprietary/bin/BackupCalibrationData:system/bin/BackupCalibrationData \
-		vendor/asus/msm8916-common/proprietary/bin/RestoreCalibrationData:system/bin/RestoreCalibrationData \
-		vendor/asus/msm8916-common/proprietary/bin/camera_flash:system/bin/camera_flash\
-		vendor/asus/msm8916-common/proprietary/bin/camera_flash2:system/bin/camera_flash2\
-		vendor/asus/msm8916-common/proprietary/bin/CameraModule:system/bin/CameraModule\
-		vendor/asus/msm8916-common/proprietary/bin/CameraOTP:system/bin/CameraOTP\
-		vendor/asus/msm8916-common/proprietary/bin/CameraResolution:system/bin/CameraResolution\
-		vendor/asus/msm8916-common/proprietary/bin/CameraTest:system/bin/CameraTest\
-		vendor/asus/msm8916-common/proprietary/bin/Camera_Unique_ID:system/bin/Camera_Unique_ID\
-		vendor/asus/msm8916-common/proprietary/bin/dit_af_cali:system/bin/dit_af_cali\
-		vendor/asus/msm8916-common/proprietary/bin/dit_cali:system/bin/dit_cali\
-		vendor/asus/msm8916-common/proprietary/bin/LaserFocus_CalStart:system/bin/LaserFocus_CalStart\
-		vendor/asus/msm8916-common/proprietary/bin/LaserFocus_enforce:system/bin/LaserFocus_enforce\
-		vendor/asus/msm8916-common/proprietary/bin/LaserFocus_on:system/bin/LaserFocus_on\
-		vendor/asus/msm8916-common/proprietary/bin/LaserFocus_Status:system/bin/LaserFocus_Status\
-		vendor/asus/msm8916-common/proprietary/bin/LaserOn:system/bin/LaserOn\
-		vendor/asus/msm8916-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libxditk_DIT_MSM8916.so:system/vendor/lib/libxditk_DIT_MSM8916.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libxditk_DIT_Qualcomm.so:system/vendor/lib/libxditk_DIT_Qualcomm.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libxditk_mmcamera2_stats_algorithm.so:system/vendor/lib/libxditk_mmcamera2_stats_algorithm.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libxditk_Network.so:system/vendor/lib/libxditk_Network.so
-
 #Actuator
 PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libactuator_a3907.so:system/vendor/lib/libactuator_a3907.so\
@@ -788,12 +710,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/etc/firmware/cmnlib.mdt:system/etc/firmware/cmnlib.mdt\
     vendor/asus/msm8916-common/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw\
     vendor/asus/msm8916-common/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt\
     vendor/asus/msm8916-common/proprietary/etc/firmware/widevine.b00:system/etc/firmware/widevine.b00\
     vendor/asus/msm8916-common/proprietary/etc/firmware/widevine.b01:system/etc/firmware/widevine.b01\
     vendor/asus/msm8916-common/proprietary/etc/firmware/widevine.b02:system/etc/firmware/widevine.b02\

@@ -1,0 +1,16 @@
+#!/system/bin/sh
+
+# Created by Stimber_Hsueh@asus.com
+
+case $1 in
+	"0")
+		cat /proc/driver/RearModule
+	;;
+	"1")
+		cat /proc/driver/FrontModule
+	;;
+	*)
+		echo "Invalid argument!!(par1 : commandID = $1)"
+	;;
+esac
+			
