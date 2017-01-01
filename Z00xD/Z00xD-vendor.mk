@@ -493,8 +493,6 @@ PRODUCT_COPY_FILES += \
 
 # DRM
 PRODUCT_COPY_FILES += \
-	vendor/asus/Z00xD/proprietary/lib/hw/keystore.qcom.so:system/lib/hw/keystore.qcom.so \
-	vendor/asus/Z00xD/proprietary/lib64/hw/keystore.qcom.so:system/lib64/hw/keystore.qcom.so \
 	vendor/asus/Z00xD/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so\
 	vendor/asus/Z00xD/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so
 
