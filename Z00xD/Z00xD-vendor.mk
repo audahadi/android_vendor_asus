@@ -491,11 +491,6 @@ PRODUCT_COPY_FILES += \
 	vendor/asus/Z00xD/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf\
 	vendor/asus/Z00xD/proprietary/vendor/etc/calmodule.cfg:system/vendor/etc/calmodule.cfg
 
-# DRM
-PRODUCT_COPY_FILES += \
-	vendor/asus/Z00xD/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so\
-	vendor/asus/Z00xD/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so
-
 # Firmware
 PRODUCT_COPY_FILES += \
 	vendor/asus/Z00xD/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00\
@@ -504,11 +499,6 @@ PRODUCT_COPY_FILES += \
 	vendor/asus/Z00xD/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03\
 	vendor/asus/Z00xD/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04\
 	vendor/asus/Z00xD/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt\
-	vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b00:system/etc/firmware/keymaster.b00\
-	vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b01:system/etc/firmware/keymaster.b01\
-	vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b02:system/etc/firmware/keymaster.b02\
-	vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b03:system/etc/firmware/keymaster.b03\
-	vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.mdt:system/etc/firmware/keymaster.mdt\
 	vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b00:system/etc/firmware/wcnss.b00\
 	vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b01:system/etc/firmware/wcnss.b01\
 	vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b02:system/etc/firmware/wcnss.b02\
