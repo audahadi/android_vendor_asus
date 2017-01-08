@@ -72,8 +72,6 @@ PRODUCT_COPY_FILES += \
 	vendor/asus/Z010D/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so\
 	vendor/asus/Z010D/proprietary/lib/libmorpho_panorama_gp.so:system/lib/libmorpho_panorama_gp.so\
 	vendor/asus/Z010D/proprietary/lib/libmpbase.so:system/lib/libmpbase.so\
-	vendor/asus/Z010D/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so\
-	vendor/asus/Z010D/proprietary/lib64/libOmxVdecHevc.so:system/lib64/libOmxVdecHevc.so\
 	vendor/asus/Z010D/proprietary/lib/libjpeggifcodec.so:system/lib/libjpeggifcodec.so\
 	vendor/asus/Z010D/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so\
 	vendor/asus/Z010D/proprietary/lib/libsarcsoftface.so:system/lib/libsarcsoftface.so\
