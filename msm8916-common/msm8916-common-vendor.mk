@@ -116,15 +116,28 @@ PRODUCT_COPY_FILES += \
 
 # DRM
 PRODUCT_COPY_FILES += \
+    vendor/asus/msm8916-common/proprietary/bin/qseecomd:system/bin/qseecomd\
     vendor/asus/msm8916-common/proprietary/lib/hw/keystore.qcom.so:system/lib/hw/keystore.qcom.so\
     vendor/asus/msm8916-common/proprietary/lib64/hw/keystore.qcom.so:system/lib64/hw/keystore.qcom.so\
-    vendor/asus/msm8916-common/proprietary/bin/qseecomd:system/bin/qseecomd\
-    vendor/asus/msm8916-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so\
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so\
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so\
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so\
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so\
+    vendor/asus/msm8916-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so\
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so\
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so
+
+# Keymaster firmware
+PRODUCT_COPY_FILES += \
+    vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.b00:system/etc/firmware/keymaster.b00\
+		vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.b01:system/etc/firmware/keymaster.b01\
+		vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.b02:system/etc/firmware/keymaster.b02\
+		vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.b03:system/etc/firmware/keymaster.b03\
+		vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.mdt:system/etc/firmware/keymaster.mdt
 
 # Widevine
 PRODUCT_COPY_FILES += \
