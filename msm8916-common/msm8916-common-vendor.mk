@@ -117,8 +117,6 @@ PRODUCT_COPY_FILES += \
 # DRM
 PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/bin/qseecomd:system/bin/qseecomd\
-    vendor/asus/msm8916-common/proprietary/lib/hw/keystore.qcom.so:system/lib/hw/keystore.qcom.so\
-    vendor/asus/msm8916-common/proprietary/lib64/hw/keystore.qcom.so:system/lib64/hw/keystore.qcom.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so\
@@ -130,6 +128,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so
+
+ifneq ($(filter Z010D,$(TARGET_DEVICE)),)
+PRODUCT_COPY_FILES += \
+   vendor/asus/msm8916-common/proprietary/lib/hw/keystore.qcom.so:system/lib/hw/keystore.qcom.so\
+    vendor/asus/msm8916-common/proprietary/lib64/hw/keystore.qcom.so:system/lib64/hw/keystore.qcom.so
+endif
 
 # Keymaster firmware
 PRODUCT_COPY_FILES += \
