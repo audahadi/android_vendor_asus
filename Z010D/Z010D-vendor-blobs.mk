@@ -183,6 +183,13 @@ PRODUCT_COPY_FILES += \
 		vendor/asus/Z010D/proprietary/bin/irsc_util:system/bin/irsc_util\
 		vendor/asus/Z010D/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so\
 		vendor/asus/Z010D/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so\
+		vendor/asus/Z010D/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so\
+		vendor/asus/Z010D/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so\
+		vendor/asus/Z010D/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so\
+		vendor/asus/Z010D/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so\
+		vendor/asus/Z010D/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so\
+		vendor/asus/Z010D/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so\
+		vendor/asus/Z010D/proprietary/vendor/lib64/libtime_genoff.so:system/vendor/lib64/libtime_genoff.so\
 		vendor/asus/Z010D/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so\
 		vendor/asus/Z010D/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so\
 		vendor/asus/Z010D/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so\
@@ -193,6 +200,8 @@ PRODUCT_COPY_FILES += \
 		vendor/asus/Z010D/proprietary/vendor/lib64/libqmi_client_helper.so:system/vendor/lib64/libqmi_client_helper.so\
 		vendor/asus/Z010D/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so\
 		vendor/asus/Z010D/proprietary/vendor/lib64/libqmi_common_so.so:system/vendor/lib64/libqmi_common_so.so\
+		vendor/asus/Z010D/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so\
+		vendor/asus/Z010D/proprietary/vendor/lib64/libqmi_cci.so:system/vendor/lib64/libqmi_cci.so\
 		vendor/asus/Z010D/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so\
 		vendor/asus/Z010D/proprietary/vendor/lib64/libqmi_csi.so:system/vendor/lib64/libqmi_csi.so\
 		vendor/asus/Z010D/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so\
