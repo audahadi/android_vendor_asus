@@ -95,7 +95,7 @@ LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib/libqct_resampler.so
 LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_PREBUILT
+include $(BUILD_PREBUILT)
 
 # 64 Libs
 include $(CLEAR_VARS)

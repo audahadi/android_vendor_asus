@@ -1,5 +1,5 @@
 PRODUCT_COPY_FILES += \
-		vendor/asus/Z010D/proprietary/bin/akmd09911:system/bin/akmd09911\
+    vendor/asus/Z010D/proprietary/bin/akmd09911:system/bin/akmd09911\
     vendor/asus/Z010D/proprietary/lib/hw/sensors.AKM.msm8916.so:system/lib/hw/sensors.AKM.msm8916.so\
     vendor/asus/Z010D/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so\
     vendor/asus/Z010D/proprietary/lib/hw/sensors.PS_ALS.msm8916.so:system/lib/hw/sensors.PS_ALS.msm8916.so\

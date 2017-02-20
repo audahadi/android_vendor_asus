@@ -53,7 +53,7 @@ PRODUCT_COPY_FILES += \
 
 # Graphics firmware
 PRODUCT_COPY_FILES += \
-		vendor/asus/Z010D/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw\
-		vendor/asus/Z010D/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw\
-		vendor/asus/Z010D/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw\
-		vendor/asus/Z010D/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw
+    vendor/asus/Z010D/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw\
+    vendor/asus/Z010D/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw\
+    vendor/asus/Z010D/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw\
+    vendor/asus/Z010D/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw
