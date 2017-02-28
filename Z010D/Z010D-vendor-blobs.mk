@@ -60,8 +60,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar\
     vendor/asus/Z010D/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar\
     vendor/asus/Z010D/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar\
-    vendor/asus/Z010D/proprietary/framework/org.cyanogenmod.hardware.jar:system/framework/org.cyanogenmod.hardware.jar \
-    vendor/asus/Z010D/proprietary/framework/org.cyanogenmod.platform.jar:system/framework/org.cyanogenmod.platform.jar \
     vendor/asus/Z010D/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar\
     vendor/asus/Z010D/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar\
     vendor/asus/Z010D/proprietary/framework/QPerformance.jar:system/framework/QPerformance.jar \
@@ -171,6 +169,8 @@ PRODUCT_COPY_FILES += \
 # Qualcomm framework
 PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/bin/irsc_util:system/bin/irsc_util\
+    vendor/asus/Z010D/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so\
+    vendor/asus/Z010D/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so\
@@ -198,6 +198,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/vendor/lib64/libqmi_encdec.so:system/vendor/lib64/libqmi_encdec.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libqmi.so:system/vendor/lib64/libqmi.so\
+    vendor/asus/Z010D/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so\
+    vendor/asus/Z010D/proprietary/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so
 
