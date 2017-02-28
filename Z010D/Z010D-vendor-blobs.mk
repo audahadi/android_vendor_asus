@@ -49,6 +49,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/asus/Z010D/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/asus/Z010D/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/asus/Z010D/proprietary/etc/permissions/qti_telephony_common.xml:system/etc/permissions/qti_telephony_common.xml \
     vendor/asus/Z010D/proprietary/etc/permissions/telephonyservice.xml::system/etc/permissions/telephonyservice.xml
 
 # framework
@@ -59,9 +60,13 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar\
     vendor/asus/Z010D/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar\
     vendor/asus/Z010D/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar\
+    vendor/asus/Z010D/proprietary/framework/org.cyanogenmod.hardware.jar:system/framework/org.cyanogenmod.hardware.jar \
+    vendor/asus/Z010D/proprietary/framework/org.cyanogenmod.platform.jar:system/framework/org.cyanogenmod.platform.jar \
     vendor/asus/Z010D/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar\
     vendor/asus/Z010D/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar\
-    vendor/asus/Z010D/proprietary/framework/QPerformance.jar:system/framework/QPerformance.jar
+    vendor/asus/Z010D/proprietary/framework/QPerformance.jar:system/framework/QPerformance.jar \
+    vendor/asus/Z010D/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar\
+    vendor/asus/Z010D/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar
 
 PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
