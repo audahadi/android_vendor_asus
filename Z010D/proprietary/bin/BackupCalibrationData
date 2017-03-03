@@ -1,0 +1,330 @@
+#!/system/bin/sh
+
+DATADATA="/data/.tmp/"
+T4K37F_GOLDEN="/t4k37f_golden.txt"
+T4K37F_RESPONSE="/t4k37f_response.txt"
+T4K37F_SHADING="/t4k37f_shading.txt"
+OV5670_GOLDEN="/ov5670_golden.txt"
+OV5670_RESPONSE="/ov5670_response.txt"
+OV5670_SHADING="/ov5670_shading.txt"
+T4K35_GOLDEN="/t4k35_golden.txt"
+T4K35_RESPONSE="/t4k35_response.txt"
+T4K35_SHADING="/t4k35_shading.txt"
+T4K37_GOLDEN="/t4k37_golden.txt"
+T4K37_RESPONSE="/t4k37_response.txt"
+T4K37_SHADING="/t4k37_shading.txt"
+MN34150_GOLDEN="/mn34150_golden.txt"
+MN34150_RESPONSE="/mn34150_response.txt"
+MN34150_SHADING="/mn34150_shading.txt"
+OV5670_GT_GOLDEN="/ov5670_gt_golden.txt"
+OV5670_GT_RESPONSE="/ov5670_gt_response.txt"
+OV5670_GT_SHADING="/ov5670_gt_shading.txt"
+MN34150_GS_GOLDEN="/mn34150_gs_golden.txt"
+MN34150_GS_RESPONSE="/mn34150_gs_response.txt"
+MN34150_GS_SHADING="/mn34150_gs_shading.txt"
+
+VCM_MACRO="/vcm_macro.txt"
+VCM_MACRO_CAL="/vcm_macro_H.txt"
+VCM_30CM="/vcm_30cm.txt"
+VCM_50CM="/vcm_50cm.txt"
+VCM_INF="/vcm_inf.txt"
+VCM_INF_CAL="/vcm_inf_H.txt"
+
+VCM_MACRO_FRONT="/vcm_macro_V_front.txt"
+VCM_30CM_FRONT="/vcm_30cm_front.txt"
+VCM_50CM_FRONT="/vcm_50cm_front.txt"
+VCM_INF_FRONT="/vcm_inf_V_front.txt"
+
+FACTORY_FOLDER="/factory"
+DEBUG=0
+PULL_VCM=0
+
+function rear_lens() {
+	OTP=`CameraOTP 0`
+	moduleID=${OTP:41:4}
+	if [ $DEBUG -eq 1 ]; then
+		echo $moduleID
+	fi
+	case $moduleID in
+		"0x24")
+			if [ $DEBUG -eq 1 ]; then
+				echo MN34150_LA
+			fi
+				REAR_GOLDEN=$MN34150_GOLDEN
+				REAR_RESPONSE=$MN34150_RESPONSE
+				REAR_SHADING=$MN34150_SHADING
+		;;
+		"0x33")
+			if [ $DEBUG -eq 1 ]; then
+				echo MN34150_GS
+			fi
+				REAR_GOLDEN=$MN34150_GS_GOLDEN
+				REAR_RESPONSE=$MN34150_GS_RESPONSE
+				REAR_SHADING=$MN34150_GS_SHADING
+		;;
+		*)
+			echo WRONG MODULE
+		;;
+	esac
+}
+
+function rear_sensor_quality() {
+
+	ID=`cat /proc/driver/RearModule`
+	case $ID in
+		"T4K37")
+			if [ $DEBUG -eq 1 ]; then
+				echo T4K37
+			fi
+			REAR_GOLDEN=$T4K37_GOLDEN
+			REAR_RESPONSE=$T4K37_RESPONSE
+			REAR_SHADING=$T4K37_SHADING
+			PULL_VCM=1
+		;;
+		"T4K35")
+			if [ $DEBUG -eq 1 ]; then
+				echo T4K35
+			fi
+			REAR_GOLDEN=$T4K35_GOLDEN
+			REAR_RESPONSE=$T4K35_RESPONSE
+			REAR_SHADING=$T4K35_SHADING
+			PULL_VCM=1
+		;;
+		"MN34150")
+			rear_lens
+			PULL_VCM=1		
+		;;
+		*)
+		echo "Incredible! No Sensor."
+		;;
+	esac
+}
+
+function front_lens() {
+
+	OTP=`CameraOTP 1`
+	moduleID=${OTP:41:4}
+	if [ $DEBUG -eq 1 ]; then
+		echo $moduleID
+	fi
+	case $moduleID in
+		"0x11")
+			if [ $DEBUG -eq 1 ]; then
+				echo DS
+			fi
+			FRONT_GOLDEN=$OV5670_GOLDEN
+			FRONT_RESPONSE=$OV5670_RESPONSE
+			FRONT_SHADING=$OV5670_SHADING
+
+		;;
+		"0x23")
+			if [ $DEBUG -eq 1 ]; then
+				echo GT
+			fi
+			FRONT_GOLDEN=$OV5670_GT_GOLDEN
+			FRONT_RESPONSE=$OV5670_GT_RESPONSE
+			FRONT_SHADING=$OV5670_GT_SHADING
+
+		;;
+		*)
+			echo WRONG MODULE		
+		;;
+	esac
+}
+
+function front_sensor_quality() {
+
+	ID=`cat /proc/driver/FrontModule`
+	case $ID in
+		"OV5670")
+			front_lens
+			PULL_VCM=0
+		;;
+		"T4K37F")
+			if [ $DEBUG -eq 1 ]; then
+				echo T4K37F
+			fi
+			FRONT_GOLDEN=$T4K37F_GOLDEN
+			FRONT_RESPONSE=$T4K37F_RESPONSE
+			FRONT_SHADING=$T4K37F_SHADING
+			PULL_VCM=1
+		;;
+		"GC2155")
+			if [ $DEBUG -eq 1 ]; then
+				echo GC2155
+			fi
+			FRONT_GOLDEN=$GC2155_GOLDEN
+			FRONT_RESPONSE=$GC2155_RESPONSE
+			FRONT_SHADING=$GC2155_SHADING
+			PULL_VCM=0
+		;;
+		*)
+		echo "Incredible! No Sensor."
+		;;
+	esac
+}
+function fail()
+{
+  if [ $DEBUG -eq 1 ]; then
+    echo "FAIL: wrong input Parameter"
+  fi
+
+  echo "FAIL"
+  exit 0
+}
+
+function copyfile()
+{
+
+  if [ -e $FACTORY_FOLDER$1 ]; then
+  	cp $FACTORY_FOLDER$1 $DATADATA$2
+	return 0
+  else
+  	if [ $DEBUG -eq 1 ]; then
+    	  echo FAIL: $1 is miss.
+  	fi
+
+	#rm -rf "$DATADATA$2"
+  	return 1
+  fi
+
+}
+
+function CopyRearCameraOTPData()
+{
+    if [ ! -d $DATADATA$1 ]; then
+      mkdir "$DATADATA$1"
+    fi
+
+	copyfile $REAR_GOLDEN $1
+	if [ $? -ne 0 ]; then
+		return 1
+	fi
+	copyfile $REAR_RESPONSE $1
+	if [ $? -ne 0 ]; then
+		return 1
+	fi
+	copyfile $REAR_SHADING $1
+	if [ $? -ne 0 ]; then
+		return 1
+	fi
+	
+	copyfile $VCM_MACRO $1
+	if [ $? -ne 0 ]; then
+		return 1
+	fi
+	copyfile $VCM_MACRO_CAL $1
+    copyfile $VCM_30CM $1
+	copyfile $VCM_50CM $1
+    copyfile $VCM_INF $1
+	if [ $? -ne 0 ]; then
+		return 1
+	fi
+	copyfile $VCM_INF_CAL $1
+	if [ $? -ne 0 ]; then
+		return 1
+	fi
+	
+    return 0
+}
+
+
+function CopyFrontCameraOTPData()
+{
+    if [ ! -d $DATADATA$1 ]; then
+      mkdir "$DATADATA$1"
+    fi
+	
+	copyfile $FRONT_GOLDEN $1
+	if [ $? -ne 0 ]; then
+		return 1
+	fi
+	copyfile $FRONT_RESPONSE $1
+	if [ $? -ne 0 ]; then
+		return 1
+	fi
+	copyfile $FRONT_SHADING $1
+	if [ $? -ne 0 ]; then
+		return 1
+	fi	
+
+	if [ $PULL_VCM -eq 1 ]; then
+		#echo "Not AF module, don't pull AF calibration data"
+	#else
+		copyfile $VCM_30CM_FRONT $1
+		copyfile $VCM_50CM_FRONT $1
+		copyfile $VCM_MACRO_FRONT $1
+		if [ $? -ne 0 ]; then
+			return 1
+		fi
+		copyfile $VCM_INF_FRONT $1
+		if [ $? -ne 0 ]; then
+			return 1
+		fi
+	fi
+	
+    return 0
+}
+
+function TarOTPData()
+{
+    cd $DATADATA && cameratoolbxs tar -zcf "$1.tar.gz" $1
+
+  if [ ! -e "$DATADATA$1.tar.gz" ]; then
+    if [ $DEBUG -eq 1 ]; then
+      echo FAIL: "$DATADATA$1.tar.gz" does not generate.
+    fi
+    return 1
+  fi
+
+    rm -rf "$DATADATA$1"
+    return 0
+}
+
+if [ $# -eq 3 ]; then
+    DEBUG=1
+fi
+
+case "$1" in
+  "0")
+	rear_sensor_quality
+        CopyRearCameraOTPData $2	
+		if [ $? -eq 0 ]; then
+		  TarOTPData $2
+		  if [ $? -eq 0 ]; then
+				echo "PASS"
+		  else
+				echo "FAIL"
+			exit 0
+		  fi
+		else
+			  echo "FAIL"
+		  exit 0
+		fi
+			exit 0
+   ;;
+
+  "1")		
+	front_sensor_quality
+	CopyFrontCameraOTPData $2
+	if [ $? -eq 0 ]; then
+	  TarOTPData $2
+	  if [ $? -eq 0 ]; then
+    	    echo "PASS"
+	  else
+    	    echo "FAIL"
+	    exit 0
+	  fi
+	else
+    	  echo "FAIL"
+	  exit 0
+	fi
+        exit 0
+    ;;
+
+  *)
+  # echo Command ID wrong: 
+    fail
+    ;;
+
+esac

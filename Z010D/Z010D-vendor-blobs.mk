@@ -169,8 +169,6 @@ PRODUCT_COPY_FILES += \
 # Qualcomm framework
 PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/bin/irsc_util:system/bin/irsc_util\
-    vendor/asus/Z010D/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so\
-    vendor/asus/Z010D/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so\
