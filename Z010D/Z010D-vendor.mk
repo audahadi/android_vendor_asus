@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
     libqcci_legacy \
     libqmi_client_qmux \
     libmdmdetect \
-		libqct_resampler
+    libqct_resampler
 
 PRODUCT_PACKAGES += \
     QtiTelephonyService \

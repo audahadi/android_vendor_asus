@@ -74,7 +74,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/lib/DataSet/ispDB/ParameterDB.db:system/lib/DataSet/ispDB/ParameterDB.db
 
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z010D/proprietary/lib/hw/lights.msm8916.so:system/lib/hw/lights.msm8916.so
+    vendor/asus/Z010D/proprietary/lib/hw/lights.msm8916.so:system/lib/hw/lights.msm8916.so \
+    vendor/asus/Z010D/proprietary/lib64/hw/lights.msm8916.so:system/lib64/hw/lights.msm8916.so
 
 # ADSP
 PRODUCT_COPY_FILES += \
@@ -168,6 +169,7 @@ PRODUCT_COPY_FILES += \
 
 # Qualcomm framework
 PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance\
     vendor/asus/Z010D/proprietary/bin/irsc_util:system/bin/irsc_util\
     vendor/asus/Z010D/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so\
@@ -280,3 +282,4 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/vendor/lib64/libNimsWrap.so:system/vendor/lib64/libNimsWrap.so\
     vendor/asus/Z010D/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so\
     vendor/asus/Z010D/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so
+
