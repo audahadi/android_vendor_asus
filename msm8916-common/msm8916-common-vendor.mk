@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_COPY_FILES += \
+    vendor/asus/msm8916-common/proprietary/etc/audio_effects.conf:system/etc/audio_effects.conf\
     vendor/asus/msm8916-common/proprietary/vendor/lib/hw/sound_trigger.primary.msm8916.so:system/vendor/lib/hw/sound_trigger.primary.msm8916.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so\
