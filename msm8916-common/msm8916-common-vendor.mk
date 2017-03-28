@@ -124,25 +124,25 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so\
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so\
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so
 
-ifneq ($(filter Z010D,$(TARGET_DEVICE)),)
+ifeq ($(filter Z010D,$(TARGET_DEVICE)),)
 PRODUCT_COPY_FILES += \
-   vendor/asus/msm8916-common/proprietary/lib/hw/keystore.qcom.so:system/lib/hw/keystore.qcom.so\
-   vendor/asus/msm8916-common/proprietary/lib64/hw/keystore.qcom.so:system/lib64/hw/keystore.qcom.so
+    vendor/asus/msm8916-common/proprietary/lib/hw/keystore.qcom.so:system/lib/hw/keystore.qcom.so\
+    vendor/asus/msm8916-common/proprietary/lib64/hw/keystore.qcom.so:system/lib64/hw/keystore.qcom.so
 endif
 
 # Keymaster firmware
 PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.b00:system/etc/firmware/keymaster.b00\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.b01:system/etc/firmware/keymaster.b01\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.b02:system/etc/firmware/keymaster.b02\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.b03:system/etc/firmware/keymaster.b03\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.mdt:system/etc/firmware/keymaster.mdt
+		vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.b01:system/etc/firmware/keymaster.b01\
+		vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.b02:system/etc/firmware/keymaster.b02\
+		vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.b03:system/etc/firmware/keymaster.b03\
+		vendor/asus/msm8916-common/proprietary/etc/firmware/keymaster.mdt:system/etc/firmware/keymaster.mdt
 
 # Widevine
 PRODUCT_COPY_FILES += \
@@ -335,117 +335,35 @@ PRODUCT_COPY_FILES += \
 
 # IMS
 PRODUCT_COPY_FILES += \
-    vendor/asus/msm8916-common/proprietary/bin/imscmservice:system/bin/imscmservice \
-    vendor/asus/msm8916-common/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
-    vendor/asus/msm8916-common/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
-    vendor/asus/msm8916-common/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
-    vendor/asus/msm8916-common/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
-    vendor/asus/msm8916-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsrcscmservice.so:system/vendor/lib64/lib-imsrcscmservice.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsrcscm.so:system/vendor/lib64/lib-imsrcscm.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsrcs.so:system/vendor/lib64/lib-imsrcs.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imss.so:system/vendor/lib64/lib-imss.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib64/lib-imsvt.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib64/lib-imsxml.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rcsimssjni.so:system/vendor/lib64/lib-rcsimssjni.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rcsjni.so:system/vendor/lib64/lib-rcsjni.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rtpcommon.so:system/vendor/lib64/lib-rtpcommon.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rtpcore.so:system/vendor/lib64/lib-rtpcore.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:system/vendor/lib64/lib-rtpdaemoninterface.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rtpsl.so:system/vendor/lib64/lib-rtpsl.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libvcel.so:system/vendor/lib64/libvcel.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so
-
-# VoLTE modem firmware - from UL-ASUS_Z010-WW-13.8.26.76-user (IN modem)
-PRODUCT_COPY_FILES += \
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/mba.mbn:system/etc/firmware/8916_volte_modem/mba.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/mcfg_sw.txt:system/etc/firmware/8916_volte_modem/mcfg_sw.txt\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b00:system/etc/firmware/8916_volte_modem/modem.b00\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b01:system/etc/firmware/8916_volte_modem/modem.b01\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b02:system/etc/firmware/8916_volte_modem/modem.b02\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b03:system/etc/firmware/8916_volte_modem/modem.b03\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b04:system/etc/firmware/8916_volte_modem/modem.b04\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b05:system/etc/firmware/8916_volte_modem/modem.b05\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b06:system/etc/firmware/8916_volte_modem/modem.b06\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b08:system/etc/firmware/8916_volte_modem/modem.b08\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b09:system/etc/firmware/8916_volte_modem/modem.b09\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b12:system/etc/firmware/8916_volte_modem/modem.b12\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b13:system/etc/firmware/8916_volte_modem/modem.b13\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b14:system/etc/firmware/8916_volte_modem/modem.b14\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b15:system/etc/firmware/8916_volte_modem/modem.b15\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b16:system/etc/firmware/8916_volte_modem/modem.b16\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b17:system/etc/firmware/8916_volte_modem/modem.b17\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b18:system/etc/firmware/8916_volte_modem/modem.b18\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b21:system/etc/firmware/8916_volte_modem/modem.b21\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b22:system/etc/firmware/8916_volte_modem/modem.b22\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b23:system/etc/firmware/8916_volte_modem/modem.b23\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/apac/airtel/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/apac/airtel/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dcm/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dcm/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/apac/kddi/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/apac/kddi/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/apac/reliance/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/apac/reliance/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/apac/sbm/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/apac/sbm/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/com_atta/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/com_atta/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/comb_att/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/comb_att/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/eps_only/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/eps_only/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/lab_conf/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/lab_conf/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/lab_nsio/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/lab_nsio/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/volte_co/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/volte_co/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/com_atta/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/com_atta/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/comb_att/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/comb_att/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/eps_only/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/eps_only/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/com_atta/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/com_atta/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/comb_att/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/comb_att/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/eps_only/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/eps_only/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/com_atta/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/com_atta/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/comb_att/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/comb_att/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/eps_only/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/eps_only/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/3g/ss/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/3g/ss/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/cg/dsda/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/cg/dsda/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/cg/dsds/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/cg/dsds/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test_eps/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test_eps/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test_no_/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test_no_/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/ss/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/ss/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srte/dsds/cta/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srte/dsds/cta/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/dsda/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/dsda/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/dsda/test_eps/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/dsda/test_eps/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/dsda/test/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/dsda/test/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/dsda/test_no_/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/dsda/test_no_/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/ss/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/ss/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/drds/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/drds/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsda/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsda/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsds/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsds/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/ss/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/ss/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/common/default/default/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/common/default/default/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/common/row/gen_3gpp/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/common/row/gen_3gpp/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/common/us_cellu/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/common/us_cellu/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/common/w_one/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/common/w_one/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/eu/ee/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/eu/ee/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/amx/non_volt/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/amx/non_volt/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/3g/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/3g/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/volte/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/volte/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/sprint/ecsfb/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/sprint/ecsfb/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/nov_comm/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/nov_comm/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/volte_co/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/volte_co/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/1xsrlte/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/1xsrlte/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/hvolte/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/hvolte/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/svlte/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/svlte/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/sa/brazil/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/sa/brazil/commerci/mcfg_sw.mbn\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smartfre/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smartfre/commerci/mcfg_sw.mbn
+		vendor/asus/msm8916-common/proprietary/bin/imscmservice:system/bin/imscmservice \
+		vendor/asus/msm8916-common/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
+		vendor/asus/msm8916-common/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
+		vendor/asus/msm8916-common/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
+		vendor/asus/msm8916-common/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
+		vendor/asus/msm8916-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsrcscmservice.so:system/vendor/lib64/lib-imsrcscmservice.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsrcscm.so:system/vendor/lib64/lib-imsrcscm.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsrcs.so:system/vendor/lib64/lib-imsrcs.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imss.so:system/vendor/lib64/lib-imss.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib64/lib-imsvt.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib64/lib-imsxml.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rcsimssjni.so:system/vendor/lib64/lib-rcsimssjni.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rcsjni.so:system/vendor/lib64/lib-rcsjni.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rtpcommon.so:system/vendor/lib64/lib-rtpcommon.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rtpcore.so:system/vendor/lib64/lib-rtpcore.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:system/vendor/lib64/lib-rtpdaemoninterface.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rtpsl.so:system/vendor/lib64/lib-rtpsl.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/libvcel.so:system/vendor/lib64/libvcel.so \
+		vendor/asus/msm8916-common/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so
 
 # Thermal
 PRODUCT_COPY_FILES += \
@@ -496,7 +414,7 @@ PRODUCT_PACKAGES += \
     libmm-abl \
     libtime_genoff \
     ims \
-    imssettings \
+		imssettings \
     imscmlibrary \
     shutdownlistener \
     TimeService \

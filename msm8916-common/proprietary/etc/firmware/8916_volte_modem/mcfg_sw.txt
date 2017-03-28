@@ -1,3 +1,0 @@
-ZC550KL_R3_20161215
-/firmware/image/RJIL1003.mbn
-/firmware/image/ROW0001.mbn
