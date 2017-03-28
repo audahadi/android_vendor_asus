@@ -130,7 +130,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so
 
-ifeq ($(filter Z010D,$(TARGET_DEVICE)),)
+ifneq ($(filter Z010D,$(TARGET_DEVICE)),)
 PRODUCT_COPY_FILES += \
    vendor/asus/msm8916-common/proprietary/lib/hw/keystore.qcom.so:system/lib/hw/keystore.qcom.so\
    vendor/asus/msm8916-common/proprietary/lib64/hw/keystore.qcom.so:system/lib64/hw/keystore.qcom.so
@@ -388,9 +388,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b21:system/etc/firmware/8916_volte_modem/modem.b21\
     vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b22:system/etc/firmware/8916_volte_modem/modem.b22\
     vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b23:system/etc/firmware/8916_volte_modem/modem.b23\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b25:system/etc/firmware/8916_volte_modem/modem.b25\
-		vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.b26:system/etc/firmware/8916_volte_modem/modem.b26\
-		vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem.mdt:system/etc/firmware/8916_volte_modem/modem.mdt\
     vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/apac/airtel/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/apac/airtel/commerci/mcfg_sw.mbn\
     vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dcm/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dcm/commerci/mcfg_sw.mbn\
     vendor/asus/msm8916-common/proprietary/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/apac/kddi/commerci/mcfg_sw.mbn:system/etc/firmware/8916_volte_modem/modem_pr/mcfg/configs/mcfg_sw/generic/apac/kddi/commerci/mcfg_sw.mbn\
