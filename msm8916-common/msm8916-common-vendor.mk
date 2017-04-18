@@ -275,6 +275,7 @@ PRODUCT_COPY_FILES += \
 
 # Qualcomm framework
 PRODUCT_COPY_FILES += \
+    vendor/asus/msm8916-common/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance\
     vendor/asus/msm8916-common/proprietary/bin/irsc_util:system/bin/irsc_util\
     vendor/asus/msm8916-common/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so\
