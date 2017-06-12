@@ -121,6 +121,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so\
+    vendor/asus/msm8916-common/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so\
