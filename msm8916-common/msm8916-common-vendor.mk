@@ -211,6 +211,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/egl/libRBGLESv2_adreno.so:system/vendor/lib64/egl/libRBGLESv2_adreno.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so\
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so\
@@ -223,6 +224,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libadreno_utils.so:system/vendor/lib64/libadreno_utils.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libc2d30-a3xx.so:system/vendor/lib64/libc2d30-a3xx.so\
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so\
@@ -236,10 +238,15 @@ PRODUCT_COPY_FILES += \
 
 # Graphics firmware
 PRODUCT_COPY_FILES += \
+    vendor/asus/msm8916-common/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw\
+    vendor/asus/msm8916-common/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw\
+    vendor/asus/msm8916-common/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw\
     vendor/asus/msm8916-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw\
     vendor/asus/msm8916-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw\
     vendor/asus/msm8916-common/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw
+    vendor/asus/msm8916-common/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw\
+    vendor/asus/msm8916-common/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw\
+    vendor/asus/msm8916-common/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw
 
 # Media
 PRODUCT_COPY_FILES += \
