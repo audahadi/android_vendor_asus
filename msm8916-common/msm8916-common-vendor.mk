@@ -390,11 +390,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/etc/firmware/cmnlib.mdt:system/etc/firmware/cmnlib.mdt\
     vendor/asus/msm8916-common/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw\
     vendor/asus/msm8916-common/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/widevine.b00:system/etc/firmware/widevine.b00\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/widevine.b01:system/etc/firmware/widevine.b01\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/widevine.b02:system/etc/firmware/widevine.b02\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/widevine.b03:system/etc/firmware/widevine.b03\
-    vendor/asus/msm8916-common/proprietary/etc/firmware/widevine.mdt:system/etc/firmware/widevine.mdt\
     vendor/asus/msm8916-common/proprietary/etc/gallery_arcsoft_config.cng:system/etc/gallery_arcsoft_config.cng
 
 PRODUCT_COPY_FILES += \
