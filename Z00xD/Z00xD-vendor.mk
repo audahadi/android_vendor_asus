@@ -464,10 +464,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z00xD/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so\
     vendor/asus/Z00xD/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so\
     vendor/asus/Z00xD/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so\
-    vendor/asus/Z00xD/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so\
-    vendor/asus/Z00xD/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so\
-    vendor/asus/Z00xD/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so\
-    vendor/asus/Z00xD/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so\
     vendor/asus/Z00xD/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so\
     vendor/asus/Z00xD/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so
 
