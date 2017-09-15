@@ -53,7 +53,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z00xD/proprietary/lib/libcameraap.so:system/lib/libcameraap.so \
     vendor/asus/Z00xD/proprietary/lib/libcamera_defocus.so:system/lib/libcamera_defocus.so \
     vendor/asus/Z00xD/proprietary/lib/libcamera_pano.so:system/lib/libcamera_pano.so \
-    vendor/asus/Z00xD/proprietary/lib/libjpeggifcodec.so:system/lib/libjpeggifcodec.so \
     vendor/asus/Z00xD/proprietary/lib/libmorpho_panorama_gp.so:system/lib/libmorpho_panorama_gp.so \
     vendor/asus/Z00xD/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
     vendor/asus/Z00xD/proprietary/lib/libsarcsoftface.so:system/lib/libsarcsoftface.so \
@@ -458,18 +457,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so
 
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so\
-    vendor/asus/Z00xD/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so\
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so\
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so\
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so\
     vendor/asus/Z00xD/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so\
     vendor/asus/Z00xD/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so\
     vendor/asus/Z00xD/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so
-
-# Power
-PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/bin/vm_bms:system/bin/vm_bms
 
 # Sensor
 PRODUCT_COPY_FILES += \
