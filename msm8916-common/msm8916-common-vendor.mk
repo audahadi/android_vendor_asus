@@ -51,7 +51,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml\
     vendor/asus/msm8916-common/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml\
     vendor/asus/msm8916-common/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf\
-    vendor/asus/msm8916-common/proprietary/etc/dpm/nsrm:system/etc/dpm/nsrm\
     vendor/asus/msm8916-common/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml\
     vendor/asus/msm8916-common/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw\
     vendor/asus/msm8916-common/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw\
@@ -111,9 +110,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so\
     vendor/asus/msm8916-common/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so\
     vendor/asus/msm8916-common/proprietary/lib64/libOmxVdecHevc.so:system/lib64/libOmxVdecHevc.so\
-    vendor/asus/msm8916-common/proprietary/lib/DataSet/ditSCidGen:system/lib/DataSet/ditSCidGen\
     vendor/asus/msm8916-common/proprietary/lib/DataSet/ditSCidGen/msgchk.db:system/lib/DataSet/ditSCidGen/msgchk.db\
-    vendor/asus/msm8916-common/proprietary/lib/DataSet/ispDB:system/lib/DataSet/ispDB\
     vendor/asus/msm8916-common/proprietary/lib/DataSet/ispDB/ParameterDB.db:system/lib/DataSet/ispDB/ParameterDB.db\
     vendor/asus/msm8916-common/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so\
     vendor/asus/msm8916-common/proprietary/lib/soundfx/libicepower.so:system/lib/soundfx/libicepower.so\
