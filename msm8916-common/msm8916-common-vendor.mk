@@ -105,10 +105,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar\
     vendor/asus/msm8916-common/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar\
     vendor/asus/msm8916-common/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar\
-    vendor/asus/msm8916-common/proprietary/lib64/hw/gps.msm8916.so:system/lib64/hw/gps.msm8916.so\
-    vendor/asus/msm8916-common/proprietary/lib64/libgps.utils.so:system/lib64/libgps.utils.so\
-    vendor/asus/msm8916-common/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so\
-    vendor/asus/msm8916-common/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so\
     vendor/asus/msm8916-common/proprietary/lib64/libOmxVdecHevc.so:system/lib64/libOmxVdecHevc.so\
     vendor/asus/msm8916-common/proprietary/lib/DataSet/ditSCidGen/msgchk.db:system/lib/DataSet/ditSCidGen/msgchk.db\
     vendor/asus/msm8916-common/proprietary/lib/DataSet/ispDB/ParameterDB.db:system/lib/DataSet/ispDB/ParameterDB.db\
