@@ -465,10 +465,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/asus/Z00xD/proprietary/bin/akmd09911:system/bin/akmd09911\
     vendor/asus/Z00xD/proprietary/lib/hw/sensors.AKM.msm8916.so:system/lib/hw/sensors.AKM.msm8916.so\
-    vendor/asus/Z00xD/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so\
+    vendor/asus/Z00xD/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.asus.so\
     vendor/asus/Z00xD/proprietary/lib/hw/sensors.PS_ALS.msm8916.so:system/lib/hw/sensors.PS_ALS.msm8916.so\
     vendor/asus/Z00xD/proprietary/lib64/hw/sensors.AKM.msm8916.so:system/lib64/hw/sensors.AKM.msm8916.so\
-    vendor/asus/Z00xD/proprietary/lib64/hw/sensors.msm8916.so:system/lib64/hw/sensors.msm8916.so\
+    vendor/asus/Z00xD/proprietary/lib64/hw/sensors.msm8916.so:system/lib64/hw/sensors.asus.so\
     vendor/asus/Z00xD/proprietary/lib64/hw/sensors.PS_ALS.msm8916.so:system/lib64/hw/sensors.PS_ALS.msm8916.so\
     vendor/asus/Z00xD/proprietary/vendor/lib/libcalmodule_gyroscope.so:system/vendor/lib/libcalmodule_gyroscope.so\
     vendor/asus/Z00xD/proprietary/vendor/lib64/libcalmodule_gyroscope.so:system/vendor/lib64/libcalmodule_gyroscope.so\
