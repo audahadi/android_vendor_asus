@@ -21,8 +21,8 @@ LOCAL_PATH := $(call my-dir)
 DEVICE_PACKAGE_OVERLAYS += vendor/asus/msm8916-common/overlay
 
 PRODUCT_COPY_FILES += \
-    vendor/asus/msm8916-common/proprietary/bin/adsprpcd:system/bin/adsprpcd\
-    vendor/asus/msm8916-common/proprietary/bin/btnvtool:system/bin/btnvtool\
+    vendor/asus/msm8916-common/proprietary/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd\
+    vendor/asus/msm8916-common/proprietary/bin/btnvtool:$(TARGET_COPY_OUT_VENDOR)/bin/btnvtool\
     vendor/asus/msm8916-common/proprietary/bin/cnd:system/bin/cnd\
     vendor/asus/msm8916-common/proprietary/bin/dpmd:system/bin/dpmd\
     vendor/asus/msm8916-common/proprietary/bin/garden_app:system/bin/garden_app\
@@ -34,7 +34,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon\
     vendor/asus/msm8916-common/proprietary/bin/irsc_util:system/bin/irsc_util\
     vendor/asus/msm8916-common/proprietary/bin/loc_launcher:system/bin/loc_launcher\
-    vendor/asus/msm8916-common/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance\
     vendor/asus/msm8916-common/proprietary/bin/netmgrd:system/bin/netmgrd\
     vendor/asus/msm8916-common/proprietary/bin/qmuxd:system/bin/qmuxd\
     vendor/asus/msm8916-common/proprietary/bin/qseecomd:system/bin/qseecomd\
@@ -81,8 +80,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/etc/firmware/wcd9306/wcd9306_anc.bin:system/etc/firmware/wcd9306/wcd9306_anc.bin\
     vendor/asus/msm8916-common/proprietary/etc/firmware/wcd9306/wcd9306_mbhc.bin:system/etc/firmware/wcd9306/wcd9306_mbhc.bin\
     vendor/asus/msm8916-common/proprietary/etc/gallery_arcsoft_config.cng:system/etc/gallery_arcsoft_config.cng\
-    vendor/asus/msm8916-common/proprietary/etc/icesoundconfig.def:system/etc/icesoundconfig.def\
-    vendor/asus/msm8916-common/proprietary/etc/icesoundpresets.def:system/etc/icesoundpresets.def\
     vendor/asus/msm8916-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml\
     vendor/asus/msm8916-common/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml\
     vendor/asus/msm8916-common/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml\
@@ -109,7 +106,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/lib/DataSet/ditSCidGen/msgchk.db:system/lib/DataSet/ditSCidGen/msgchk.db\
     vendor/asus/msm8916-common/proprietary/lib/DataSet/ispDB/ParameterDB.db:system/lib/DataSet/ispDB/ParameterDB.db\
     vendor/asus/msm8916-common/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so\
-    vendor/asus/msm8916-common/proprietary/lib/soundfx/libicepower.so:system/lib/soundfx/libicepower.so\
     vendor/asus/msm8916-common/proprietary/lib/style.cng:system/lib/style.cng\
     vendor/asus/msm8916-common/proprietary/vendor/bin/perfd:system/vendor/bin/perfd\
     vendor/asus/msm8916-common/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon\
