@@ -477,22 +477,4 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z00xD/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf\
     vendor/asus/Z00xD/proprietary/vendor/etc/calmodule.cfg:system/vendor/etc/calmodule.cfg
 
-# Firmware
-PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00\
-    vendor/asus/Z00xD/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01\
-    vendor/asus/Z00xD/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02\
-    vendor/asus/Z00xD/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03\
-    vendor/asus/Z00xD/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04\
-    vendor/asus/Z00xD/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b00:system/etc/firmware/wcnss.b00\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b01:system/etc/firmware/wcnss.b01\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b02:system/etc/firmware/wcnss.b02\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b06:system/etc/firmware/wcnss.b06\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b09:system/etc/firmware/wcnss.b09\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b10:system/etc/firmware/wcnss.b10\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b11:system/etc/firmware/wcnss.b11\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt
-
 $(call inherit-product, vendor/asus/msm8916-common/msm8916-common-vendor.mk)

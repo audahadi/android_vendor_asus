@@ -14,30 +14,4 @@
 
 # Pick up overlay for features that depend on non-open-source files
 
-PRODUCT_COPY_FILES += \
-    vendor/asus/Z010DD/proprietary/etc/firmware/cmnlib.b00:install/bin/etc/firmware/cmnlib.b00 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/cmnlib.b01:install/bin/etc/firmware/cmnlib.b01 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/cmnlib.b02:install/bin/etc/firmware/cmnlib.b02 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/cmnlib.b03:install/bin/etc/firmware/cmnlib.b03 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/cmnlib.mdt:install/bin/etc/firmware/cmnlib.mdt \
-    vendor/asus/Z010DD/proprietary/etc/firmware/keymaster.b00:install/bin/etc/firmware/keymaster.b00 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/keymaster.b01:install/bin/etc/firmware/keymaster.b01 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/keymaster.b02:install/bin/etc/firmware/keymaster.b02 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/keymaster.b03:install/bin/etc/firmware/keymaster.b03 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/keymaster.mdt:install/bin/etc/firmware/keymaster.mdt \
-    vendor/asus/Z010DD/proprietary/etc/firmware/venus.b00:install/bin/etc/firmware/venus.b00 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/venus.b01:install/bin/etc/firmware/venus.b01 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/venus.b02:install/bin/etc/firmware/venus.b02 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/venus.b03:install/bin/etc/firmware/venus.b03 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/venus.b04:install/bin/etc/firmware/venus.b04 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/venus.mdt:install/bin/etc/firmware/venus.mdt \
-    vendor/asus/Z010DD/proprietary/etc/firmware/wcnss.b00:install/bin/etc/firmware/wcnss.b00 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/wcnss.b01:install/bin/etc/firmware/wcnss.b01 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/wcnss.b02:install/bin/etc/firmware/wcnss.b02 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/wcnss.b04:install/bin/etc/firmware/wcnss.b04 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/wcnss.b06:install/bin/etc/firmware/wcnss.b06 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/wcnss.b09:install/bin/etc/firmware/wcnss.b09 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/wcnss.b10:install/bin/etc/firmware/wcnss.b10 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/wcnss.b11:install/bin/etc/firmware/wcnss.b11 \
-    vendor/asus/Z010DD/proprietary/etc/firmware/wcnss.mdt:install/bin/etc/firmware/wcnss.mdt
 
