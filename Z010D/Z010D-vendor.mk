@@ -486,8 +486,16 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf\
     vendor/asus/Z010D/proprietary/vendor/etc/calmodule.cfg:system/vendor/etc/calmodule.cfg
 
+# Firmware
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z010D/proprietary/lib/hw/keystore.qcom.so:system/lib/hw/keystore.qcom.so\
-    vendor/asus/Z010D/proprietary/lib64/hw/keystore.qcom.so:system/lib64/hw/keystore.qcom.so
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b00:system/etc/firmware/wcnss.b00\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b01:system/etc/firmware/wcnss.b01\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b02:system/etc/firmware/wcnss.b02\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b06:system/etc/firmware/wcnss.b06\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b09:system/etc/firmware/wcnss.b09\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b10:system/etc/firmware/wcnss.b10\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b11:system/etc/firmware/wcnss.b11\
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt
 
 $(call inherit-product, vendor/asus/msm8916-common/msm8916-common-vendor.mk)
