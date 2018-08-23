@@ -95,7 +95,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml\
     vendor/asus/msm8916-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml\
     vendor/asus/msm8916-common/proprietary/etc/permissions/qti_telephony_common.xml:system/etc/permissions/qti_telephony_common.xml\
-    vendor/asus/msm8916-common/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf\
     vendor/asus/msm8916-common/proprietary/etc/tamcid:system/etc/tamcid\
     vendor/asus/msm8916-common/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar\
     vendor/asus/msm8916-common/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar\
